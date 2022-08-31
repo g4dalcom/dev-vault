@@ -1,0 +1,72 @@
+---
+keyword : Java
+class : CS
+---
+
+
+### JPA & SQL
+
+#### JPA(Java Persistence API)
+
+자바 진영의 ORM 기술 표준으로,
+
+-   JPA가 제공하는 API를 사용하면 객체를 DB에 저장하고 관리할 때, 개발자가 직접 SQL을 작성하지 않아도 된다.
+-   JPA가 개발자 대신 적절한 SQL을 생성해서 DB에 전달하고, 객체를 자동으로 Mapping 해준다.
+-   JPA를 활용한다면 모든 SQL에 대해 개발자 대신 JPA가 자동으로 해결해 준다는 점에서 생산성을 크게 높인다.
+
+### ORM(Object-Relational Mapping)은 객체와 관계형 DB를 매핑한다는 것.
+
+DB는 SQL이라는 언어를 사용하기 때문에 객체를 데이터베이스에 넣기 위해서는 자바가 아닌 SQL문을 통해 변환해서 저장해야하고, 데이터베이스에서 객체를 다시 꺼내오기 위해서는 복잡한 SQL문을 작성해야 한다. 결국 객체를 단순히 데이터 전달 목적으로 사용할 뿐 객체지향적으로 프로그래밍을 할 수가 없다. 이는 객체지향과 관계형 데이터베이스 간의 패러다임이 불일치하기 때문이다. 이를 해결하기 위해서 나온 기술이 ORM이다.
+
+객체를 마치 자바 컬렉션에 저장하듯 저장할 수 있고 이에 대해 ORM 프레임워크가 적절한 SQL을 생성해서 DB에 객체를 저장해준다.
+
+JPA는 자바 언어를 DB가 이해할 수 있게하고 나아가 SQL을 쓰지 않고 데이터 관리에 편리한 기능을 제공하는 번역기라고 할 수 있다.
+
+또한 데이터베이스에 따라 조금씩 다른 문법을 신경쓰지 않고 오로지 자바로 데이터베이스와 소통할 수 있다는 장점이 있다.
+
+-   복잡한 쿼리 처리
+    -   통계 처리 같은 복잡한 쿼리를 사용할 경우는 SQL문을 사용하는 게 나을 수도 있다. JPA에서는 Native SQL을 통해 기존의 SQL문을 사용할 수 있지만 그러면 특정 데이터베이스에 종속된다는 단점이 생긴다. 이를 보완하기 위해서는 SQL과 유사한 기술인 JPQL을 지원한다.
+-   성능 저하 위험
+    -   객체 간의 매핑 설계를 잘못했을 때 성능 저하가 발생할 수 있으며, 자동으로 생성되는 쿼리가 많기 때문에 개발자가 의도하지 않는 쿼리로 인해 성능이 저하되기도 한다.
+-   학습 시간
+    -   JPA를 제대로 사용하려면 알아야 할 것이 많아서 학습하는 데 시간이 오래 걸린다.
+
+테이블 = 엑셀시트 = Domain / Entity
+
+SQL = 조회해오는 기능 = Repository
+
+SQL
+
+### 테이블 생성
+
+```java
+CREATE TABLE IF NOT EXISTS courses (
+    id bigint NOT NULL AUTO_INCREMENT, 
+    title varchar(255) NOT NULL,
+    tutor varchar(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+```
+
+courses 라는 테이블이 없다면 생성하라
+
+bigint = Long / varchar = String
+
+not null = 비어있으면 안 됨
+
+auto_increment = 자동으로 1씩 증가
+
+primary key (id) = 고유한값(구분할 수 있는 값)으로 id를 쓰겠다
+
+### 데이터 삽입
+
+```java
+INSERT INTO courses (title, tutor) VALUES
+    ('웹개발의 봄, Spring', '남병관'), ('웹개발 종합반', '이범규');
+```
+
+### 데이터 조회
+
+```java
+SELECT * FROM courses;
+```
