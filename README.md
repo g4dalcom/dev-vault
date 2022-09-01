@@ -12,7 +12,7 @@
 
 ### 🔎 Learned
 - ### Computer Science
-	- [객체지향프로그래밍](/Studying/CS/객체지향프로그래밍)
+	- [객체지향프로그래밍](/Studying/CS/객체지향프로그래밍.md)
 	- [자바가상머신(JVM)](/Studying/CS/자바가상머신(JVM))
 	- [쿠키와 세션](/Studying/CS/쿠키와_세션(Cookie&Session))
 	- [IoC와 DI & Bean](/Studying/CS/IoC(Inversion_of_Control)와_DI(Dependency_Injection)_&_Bean)
