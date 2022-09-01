@@ -22,6 +22,7 @@
 	- [restAPI에서 PUT & PATCH](/Studying/CS/restAPI에서_PUT_PATCH.md)
 	- [SSR과 CSR 비교](SSR_CSR.md)
 	- [TDD(Test-Driven_Development)](/Studying/CS/TDD(Test-Driven_Development).md)
+	- [웹에서의 인증과 인가]((/Studying/CS/인증_인가.md)
 	- [자료구조 - Array와 Linked List](/Studying/CS/자료구조_Array_Linked_List.md)
 - ### Grammar
 	- [자바_Arrays로 배열 다루기](/Stydying/Grammar/자바_Arrays.md)
@@ -35,8 +36,11 @@
 	- [3계층 관련](/Stydying/Programming/자바_Coupling.md)
 	- [Controller & HTTP message](/Stydying/Programming/스프링_Controller_HTTPmessage.md)
 	- [깃 매뉴얼(Source Tree 기준)](/Studying/Programming/깃_매뉴얼.md)
+	- [세팅_빌드와 배포 프로세스](/Studying/Programming/세팅_빌드및배포.md)
+	- [Security_JWT Token 인증방식](/Studying/Programming/JWT토큰인증방식.md)
 - ### Error Handling
 	- [H2 DB_웹콘솔 접속 오류](/Stydying/Errors/H2_웹콘솔_접속_오류.md)
 	- [Java_bin하위폴더에서 class실행할 때 오류](/Stydying/Errors/Java_bin하위폴더class실행오류.md)
-	- [Spring_ServerAlreadyInUse](/Stydying/Errors/Spring_ServerAlreadyInUse.md)
+	- [포트 중복 오류 / Web server failed to start. Port 8080 was already in use.](/Stydying/Errors/Spring_ServerAlreadyInUse.md)
 	- [WebSecurityConfigurerAdapter 지원하지 않는 문제](/Stydying/Errors/WebSecurityConfigurerAdapter_지원하지_않는_문제.md)
+	- [API POST 전송 오류 / Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement](/Stydying/Errors/API_POST_전송오류.md)
