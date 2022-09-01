@@ -20,7 +20,7 @@
 	- [JWT 토큰](/Studying/CS/JWT.md)
 	- [MVC 패턴](/Studying/CS/MVC패턴.md)
 	- [restAPI에서 PUT & PATCH](/Studying/CS/restAPI에서_PUT_PATCH.md)
-	- [SSR과 CSR 비교](SSR & CSR.md)
+	- [SSR과 CSR 비교](SSR_CSR.md)
 	- [TDD(Test-Driven_Development)](/Studying/CS/TDD(Test-Driven_Development).md)
 - ### Grammar
 	- [자바_Arrays로 배열 다루기](/Stydying/Grammar/자바_Arrays.md)
