@@ -24,6 +24,7 @@
 	- [TDD(Test-Driven_Development)](/Studying/CS/TDD(Test-Driven_Development).md)
 	- [웹에서의 인증과 인가](/Studying/CS/인증_인가.md)
 	- [자료구조 - Array와 Linked List](/Studying/CS/자료구조_Array_Linked_List.md)
+	- [CORS](/Studying/CS/CORS.md)
 - ### Grammar
 	- [자바_Arrays로 배열 다루기](/Studying/Grammar/자바_Arrays.md)
 	- [자바_BigInteger](/Studying/Grammar/자바_BigInteger.md)
