@@ -33,11 +33,11 @@
 	- [파이썬_알고리즘 기초 문법(Input, split, map)](/Studying/Grammar/파이썬_알고리즘_기초_문법(Input_split_map).md)
 	- [파이썬_input & sys.stdin.readline](/Studying/Grammar/파이썬_input_sys.stdin.readline.md)
 - ### Programming
-	- [3계층 관련](/Studying/Programming/자바_Coupling.md)
-	- [Controller & HTTP message](/Studying/Programming/스프링_Controller_HTTPmessage.md)
-	- [깃 매뉴얼(Source Tree 기준)](/Studying/Programming/깃_매뉴얼.md)
-	- [세팅_빌드와 배포 프로세스](/Studying/Programming/세팅_빌드및배포.md)
-	- [Security_JWT Token 인증방식](/Studying/Programming/JWT토큰인증방식.md)
+	- [3계층 관련](자바_Coupling.md)
+	- [Controller & HTTP message](스프링_Controller_HTTPmessage.md)
+	- [깃 매뉴얼(Source Tree 기준)](깃_매뉴얼.md)
+	- [세팅_빌드와 배포 프로세스](세팅_빌드및배포.md)
+	- [Security_JWT Token 인증방식](JWT토큰인증방식.md)
 - ### Error Handling
 	- [H2 DB_웹콘솔 접속 오류](/Studying/Errors/H2_웹콘솔_접속_오류.md)
 	- [Java_bin하위폴더에서 class실행할 때 오류](/Studying/Errors/Java_bin하위폴더class실행오류.md)
