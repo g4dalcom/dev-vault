@@ -1,5 +1,5 @@
 ---
-keyword : Concept
+keyword : Data structure
 class : CS
 ---
 
