@@ -8,7 +8,7 @@
 - [알고리즘 문제풀이(21~30)](/Algorithm/문제풀이(21~30))
 - [알고리즘 문제풀이(31~40)](/Algorithm/문제풀이(31~40))
 - [알고리즘 문제풀이(41~50)](/Algorithm/문제풀이(41~50))
-- [알고르짐 문제풀이(51~60)](/Algorithm/문제풀이(51~60))
+- [알고리즘 문제풀이(51~60)](/Algorithm/문제풀이(51~60))
 
 
 ### 🔎 Learned
@@ -24,7 +24,8 @@
 	- [SSR과 CSR 비교](/Studying/CS/SSR_CSR.md)
 	- [TDD(Test-Driven_Development)](/Studying/CS/TDD(Test-Driven_Development).md)
 	- [웹에서의 인증과 인가](/Studying/CS/인증_인가.md)
-	-  [CORS](/Studying/CS/CORS.md)
+	- [CORS](/Studying/CS/CORS.md)
+	- [Dispatcher-Sevlet](/Studying/CS/Dispatcher-Servlet.md)
 	- [자료구조 - 기본](/Studying/CS/자료구조_기본.md)
 	- [자료구조 - Array와 Linked List](/Studying/CS/자료구조_Array_Linked_List.md)
 	- [자료구조 - Stack and Que](/Studying/CS/자료구조_Stack_&_Que.md)
@@ -38,12 +39,18 @@
 	- [파이썬_기본자료형 문자열(String)](/Studying/Grammar/파이썬_기본자료형_문자열(String).md)
 	- [파이썬_알고리즘 기초 문법(Input, split, map)](/Studying/Grammar/파이썬_알고리즘_기초_문법(Input_split_map).md)
 	- [파이썬_input & sys.stdin.readline](/Studying/Grammar/파이썬_input_sys.stdin.readline.md)
+	- [파이썬_append(), extend(), insert() 함수 비교](/Studying/Grammar/파이썬_append_extend_insert.md)
+	- [파이썬_리스트를_문자열로_변환하기](/Studying/Grammar/파이썬_리스트를_문자열로_변환하기.md)
+
+
 - ### Programming
 	- [3계층 관련](자바_Coupling.md)
 	- [Controller & HTTP message](스프링_Controller_HTTPmessage.md)
 	- [깃 매뉴얼(Source Tree 기준)](깃_매뉴얼.md)
 	- [세팅_빌드와 배포 프로세스](세팅_빌드및배포.md)
 	- [Security_JWT Token 인증방식](JWT토큰인증방식.md)
+
+
 - ### Error Handling
 	- [H2 DB_웹콘솔 접속 오류](/Studying/Errors/H2_웹콘솔_접속_오류.md)
 	- [Java_bin하위폴더에서 class실행할 때 오류](/Studying/Errors/Java_bin하위폴더class실행오류.md)
