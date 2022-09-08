@@ -53,6 +53,8 @@
 	- [Security_JWT Token 인증방식](/Studying/Programming/JWT토큰인증방식.md)
 	- [스프링_스프링시큐리티 플로우](/Studying/Programming/스프링_스프링시큐리티_플로우.md)
 	- [스프링_JWT Token](/Studying/Programming/스프링_JWT_Token.md)
+	- [스프링_패키지 구조](/Studying/Programming/스프링_패키지_구조.md)
+	- [스프링_DTO Inner Class로 관리하기](/Studying/Programming/스프링_DTO_Inner_Class로_관리하기.md)
 
 
 - ### Error Handling
