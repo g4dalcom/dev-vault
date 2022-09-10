@@ -63,3 +63,7 @@
 	- [포트 중복 오류 / Web server failed to start. Port 8080 was already in use.](/Studying/Errors/Spring_ServerAlreadyInUse.md)
 	- [WebSecurityConfigurerAdapter 지원하지 않는 문제](/Studying/Errors/WebSecurityConfigurerAdapter_지원하지_않는_문제.md)
 	- [API POST 전송 오류 / Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement](/Studying/Errors/API_POST_전송오류.md)
+	- [양방향순환참조 에러 / 무한로그 / stackoverflow: null](/Studying/Errors/양방향순환참조에러_stackoverflow.md)
+
+
+
