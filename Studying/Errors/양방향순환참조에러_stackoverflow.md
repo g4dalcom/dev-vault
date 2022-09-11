@@ -4,7 +4,7 @@ class : ERROR
 ---
 
 
-### 양방향순환참조에러, Stackoverflow: null
+# 양방향순환참조에러, Stackoverflow: null
 
 
 #### 에러내용
@@ -111,24 +111,24 @@ Posts > Comment > Posts > Comment와 같이 서로를 계속해서 참조하게
 
 순환 참조를 방지하기 위한 방법은 여러 가지가 있다.
 
-**1. @JsonIgnore** 
+##### 1. @JsonIgnore
 
 이 어노테이션을 붙이면 JSON 데이터에 해당 프로퍼티는 null로 들어가게 된다. 
 즉, 데이터에 아예 포함시키지 않는다.
 
-**2. @JsonManagedReference 와 @JsonBackReference**
+##### 2. @JsonManagedReference 와 @JsonBackReference
 
 부모 클래스(Posts entity)의 Comment 필드에 @JsonManagedReference를, 자식 클래스(Comment entity)의 Posts 필드에 @JsonBackReference를 추가해주면 순환 참조를 막을 수 있다.
 
-**3.@JsonIgnoreProperties**
+##### 3.@JsonIgnoreProperties
 
 부모 클래스(Posts entity)의 Comment 필드에 @JsonIgnoreProperties({"posts"}) 를 붙여주면 순환 참조를 막을 수 있다.
 
-**4. DTO 사용**
+##### 4. DTO 사용
 
 위와 같은 상황이 발생하게된 주원인은 '양방향 매핑'이기도 하지만, 더 정확하게는 Entity 자체를 response로 리턴한데에 있다. entity 자체를 return 하지 말고, DTO 객체를 만들어 필요한 데이터만 옮겨담아 Client로 리턴하면 순환 참조 관련 문제는 애초에 방지 할 수 있다.
 
-**5. 매핑 재설정**
+##### 5. 매핑 재설정
 
 양방향 매핑이 꼭 필요한지 다시 한번 생각해볼 필요가 있다. 만약 양쪽에서 접근할 필요가 없다면 단방향 매핑을 해줘서 자연스레 순환 참조 문제를 해결하자.
 
