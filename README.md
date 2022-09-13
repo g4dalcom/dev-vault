@@ -42,6 +42,7 @@
 	- [파이썬_input & sys.stdin.readline](/Studying/Grammar/파이썬_input_sys.stdin.readline.md)
 	- [파이썬_append(), extend(), insert() 함수 비교](/Studying/Grammar/파이썬_append_extend_insert.md)
 	- [파이썬_리스트를_문자열로_변환하기](/Studying/Grammar/파이썬_리스트를_문자열로_변환하기.md)
+	- [파이썬_정렬함수 sorted(), sort()](/Studying/Grammar/파이썬_정렬함수sorted.md)
 
 
 
