@@ -14,6 +14,7 @@ class : CS
 
 
 ## Linked List
+![LinkedList](https://t1.daumcdn.net/cfile/tistory/2519F74E535927FA05)
 
 이 부분에 대한 문제점을 해결하기 위한 자료구조가 linked list 이다. 각각의 원소들은 자기 자신 다음에 어떤 원소인지만을 기억하고 있다. 따라서 이 부분만 다른 값으로 바꿔주면 삭제와 삽입을 O(1) 만에 해결할 수 있는 것이다.
 
