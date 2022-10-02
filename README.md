@@ -59,6 +59,7 @@
 	- [스프링_JWT Token](/Studying/Programming/스프링_JWT_Token.md)
 	- [스프링_패키지 구조](/Studying/Programming/스프링_패키지_구조.md)
 	- [스프링_DTO Inner Class로 관리하기](/Studying/Programming/스프링_DTO_Inner_Class로_관리하기.md)
+	- [Querydsl](/Studying/Programming/Querydsl.md)
 
 
 
@@ -69,6 +70,7 @@
 	- [WebSecurityConfigurerAdapter 지원하지 않는 문제](/Studying/Errors/WebSecurityConfigurerAdapter_지원하지_않는_문제.md)
 	- [API POST 전송 오류 / Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement](/Studying/Errors/API_POST_전송오류.md)
 	- [양방향순환참조 에러 / 무한로그 / stackoverflow: null](/Studying/Errors/양방향순환참조에러_stackoverflow.md)
+	- [Querydsl compile error / Unable to load class 'com.mysema.codegen.model.Type'.](/Studying/Errors/Querydsl_compile_오류.md)
 
 
 
