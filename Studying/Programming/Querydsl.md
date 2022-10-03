@@ -557,3 +557,97 @@ JPA JPQL 서브쿼리의 한계점으로 from 절의 서브쿼리(인라인 뷰)
 1. 서브쿼리를 join으로 변경한다. (가능한 상황도 있고, 불가능한 상황도 있다.)
 2. 애플리케이션에서 쿼리를 2번 분리해서 실행한다.
 3. nativeSQL을 사용한다
+
+
+## Case문
+select, 조건절(where), order by에서 사용 가능
+
+###### 단순한 조건
+```java
+List<String> result = queryFactory
+	 .select(member.age
+			 .when(10).then("열살")
+			 .when(20).then("스무살")
+			 .otherwise("기타"))
+	 .from(member)
+	 .fetch();
+```
+
+###### 복잡한 조건
+```java
+List<String> result = queryFactory
+	 .select(new CaseBuilder()
+			 .when(member.age.between(0, 20)).then("0~20살")
+			 .when(member.age.between(21, 30)).then("21~30살")
+			 .otherwise("기타"))
+	 .from(member)
+	 .fetch();
+```
+
+###### orderBy에서 Case 문 함께 사용하기 예제
+예를 들어서 다음과 같은 임의의 순서로 회원을 출력하고 싶다면?
+
+1. 0 ~ 30살이 아닌 회원을 가장 먼저 출력
+2. 0 ~ 20살 회원 출력
+3. 21 ~ 30살 회원 출력
+
+```java
+NumberExpression<Integer> rankPath = new CaseBuilder()
+		 .when(member.age.between(0, 20)).then(2)
+		 .when(member.age.between(21, 30)).then(1)
+		 .otherwise(3);
+		 
+List<Tuple> result = queryFactory
+		 .select(member.username, member.age, rankPath)
+		 .from(member)
+		 .orderBy(rankPath.desc())
+		 .fetch();
+		 
+for (Tuple tuple : result) {
+		 String username = tuple.get(member.username);
+		 Integer age = tuple.get(member.age);
+		 Integer rank = tuple.get(rankPath);
+		 
+ System.out.println("username = " + username + " age = " + age + " rank = "
++ rank);
+}
+```
+
+Querydsl은 자바 코드로 작성하기 때문에 rankPath 처럼 복잡한 조건을 변수로 선언해서 select 절, orderBy 절에서 함께 사용할 수 있다.
+
+결과
+```java
+username = member4 age = 40 rank = 3
+username = member1 age = 10 rank = 2
+username = member2 age = 20 rank = 2
+username = member3 age = 30 rank = 1
+```
+
+
+
+## 상수, 문자 더하기
+
+###### 상수가 필요하면 Expressions.constant(xxx) 사용
+```java
+Tuple result = queryFactory
+		 .select(member.username, Expressions.constant("A"))
+		 .from(member)
+		 .fetchFirst();
+```
+
+참고: 위와 같이 최적화가 가능하면 SQL에 constant 값을 넘기지 않는다. 상수를 더하는 것 처럼 최적화가 어려우면 SQL에 constant 값을 넘긴다.
+
+###### 문자 더하기 concat
+```java
+String result = queryFactory
+		 .select(member.username.concat("_")
+				 .concat(member.age.stringValue()))
+		 .from(member)
+		 .where(member.username.eq("member1"))
+		 .fetchOne();
+```
+
+```java
+결과: member1_10
+```
+참고: member.age.stringValue() 부분이 중요한데, 문자가 아닌 다른 타입들은 stringValue() 로 문자로 변환할 수 있다. 이 방법은 ENUM을 처리할 때도 자주 사용한다
