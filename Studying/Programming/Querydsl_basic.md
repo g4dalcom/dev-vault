@@ -1,3 +1,9 @@
+---
+keyword : Spring, Querydsl
+class : Programming
+---
+
+
 # What is Querydsl
 - Querydsl은 JPA를 편하게 사용할 수 있게 도와주는 Java 프레임워크로 SQL, JPQL을 java코드로 작성 할 수 있도록 해주는 오픈소스이다. 대부분의 SQL언어를 문자열이 아닌 java type으로 작성이 가능하여 IDE와 컴파일 도움을 받기 쉽고 또한 JDBC도 추상화하여 native sql 언어로 직접 데이터베이스에 쿼리를 실행할 수 있다.
 

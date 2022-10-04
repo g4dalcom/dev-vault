@@ -43,6 +43,13 @@ jwt.secretKey = ENC(nMqfM8muUnc9ykoMvtyc/NQUSDTZSPvi8OK9sxz7FD9rOa1zoqw9K3OlgSEg
   
 # TOURIST OPEN API KEY  
 restAPI.key=3t3ZRksGWDsuB9PCUSD%2F6uASFB3RfGSoi9vIxciQ1de2wb8sieQfeIGSkbz5nMctFfa8nw9j70VzLDd371WxcA%3D%3D
+restAPI.key2=jjFcCbTiAQcPWAZRfHh2biULNgMykQpW8LNUXqaMF1bpTLo23Q9gLiTiYIZ%2FUq048QujKNqHzhcJnqKBrRt6bg%3D%3D
+restAPI.key3=EMmTq%2FaIgzLrcBVbLmi13s5vaV7Vdafyb%2BKZqxnsr4Q%2BxV1HEnbzCX6I8aHoVsW3EtjFcKGjW8nxMP%2B5%2Fs2A5Q%3D%3D
+restAPI.key4=RcT8qh5TRaA38plC7Stgtkz9cjtjmrFjUqmLKSQmWu0k8BvJzIji8GOkiBpkIpaZHBGVbSXg0m2C6RhGkIowxw%3D%3D
+restAPI.key5=Pt4ZCD7qX0IzoWpPWDUC24iA%2FREeFwI5xz3bbYBR8ykniSiSLQoEw6Rg4ZwVDWN%2F%2Fma45hxaXmhDYLUoKrj7zQ%3D%3D
+restAPI.key6=7ZIyc8gjEAQ0%2FTHFGI9vioXv7sFclJorrcmKDxWQ%2B0Y8K%2BB1xhh2T8lThwcpkoFtMmylJ9LA6OUuEVdYuqb7JQ%3D%3D
+restAPI.key7=dscIbaKc5BG7x6XYU7ZgVMEoOvUq3e0nUZ%2B%2Fx4x72r3qgnjfC0dmZx9FWm0tagwOWfFhrWUvJOeWn40YEpj4Zg%3D%3D
+
 
 ## Email Settings
 spring.mail.host=smtp.gmail.com
