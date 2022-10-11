@@ -62,4 +62,6 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 spring.mail.transport.protocol=smtp
 spring.mail.debug=true
 spring.mail.default.encoding=UTF-8
+
+kakaoAPI.key=80fffb8fffdb43c7d627f693b84a4416
 ```
