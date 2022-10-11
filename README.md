@@ -59,10 +59,10 @@
 	- [스프링_JWT Token](/Studying/Programming/스프링_JWT_Token.md)
 	- [스프링_패키지 구조](/Studying/Programming/스프링_패키지_구조.md)
 	- [스프링_DTO Inner Class로 관리하기](/Studying/Programming/스프링_DTO_Inner_Class로_관리하기.md)
-	- [Querydsl_basic](Querydsl_basic.md)
-	- [Querydsl_middle](Querydsl_middle.md)
-	- [Querydsl_business](Querydsl_business.md)
-	- [Querydsl_custom](Querydsl_custom.md)
+	- [Querydsl_basic](/Studying/Programming/Querydsl_basic.md)
+	- [Querydsl_middle](/Studying/Programming/Querydsl_middle.md)
+	- [Querydsl_business](/Studying/Programming/Querydsl_business.md)
+	- [Querydsl_custom](/Studying/Programming/Querydsl_custom.md)
 
 
 
