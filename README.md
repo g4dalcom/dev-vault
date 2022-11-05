@@ -66,6 +66,7 @@
 	- [Querydsl_middle](/Studying/Programming/Querydsl_middle.md)
 	- [Querydsl_business](/Studying/Programming/Querydsl_business.md)
 	- [Querydsl_custom](/Studying/Programming/Querydsl_custom.md)
+	- [도커&젠킨스를 이용한 스프링부트 CICD](/Studying/Programming/도커&젠킨스_스프링부트CICD.md)
 
 
 
@@ -77,6 +78,7 @@
 	- [API POST 전송 오류 / Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement](/Studying/Errors/API_POST_전송오류.md)
 	- [양방향순환참조 에러 / 무한로그 / stackoverflow: null](/Studying/Errors/양방향순환참조에러_stackoverflow.md)
 	- [Querydsl compile error / Unable to load class 'com.mysema.codegen.model.Type'.](/Studying/Errors/Querydsl_compile_오류.md)
+	- [젠킨스CICD 에러 모음](/Studying/Errors/JekinsCICD_ERROR.md)
 
 
 
