@@ -79,6 +79,6 @@
 	- [양방향순환참조 에러 / 무한로그 / stackoverflow: null](/Studying/Errors/양방향순환참조에러_stackoverflow.md)
 	- [Querydsl compile error / Unable to load class 'com.mysema.codegen.model.Type'.](/Studying/Errors/Querydsl_compile_오류.md)
 	- [젠킨스CICD 에러 모음](/Studying/Errors/JekinsCICD_ERROR.md)
-
+	- [정적자원 외부에서 불러오기](/Studying/Errors/정적자원_외부에서_불러오기.md)
 
 
