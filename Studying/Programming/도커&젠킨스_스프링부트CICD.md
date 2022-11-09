@@ -1,3 +1,8 @@
+---
+keyword : CI/CD, Docker, Jenkins, Deploy
+class : Programming
+---
+
 Docker와 Jenkins를 이용한 스프링부트 CI/CD 연습을 해보았다!
 기본적인 플로우는 우분투에서 도커를 띄우고 도커 내에 젠킨스와 스프링부트를 pull 받아서 스프링부트 프로젝트를 띄우는 것이다
 

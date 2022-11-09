@@ -67,6 +67,7 @@
 	- [Querydsl_business](/Studying/Programming/Querydsl_business.md)
 	- [Querydsl_custom](/Studying/Programming/Querydsl_custom.md)
 	- [도커&젠킨스를 이용한 스프링부트 CICD](/Studying/Programming/도커&젠킨스_스프링부트CICD.md)
+	- [젠킨스로 설정파일 관리하기](/Studying/Programming/젠킨스로_설정파일_관리하기.md)
 
 
 
