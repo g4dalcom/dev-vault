@@ -1,11 +1,4 @@
----
-keyword : 
-difficulty : 상 중 하
-completion : ✅❌
-notice : 
----
-
-# [제목]()
+# [문제링크]()
 
 ## 📝 문제
 
