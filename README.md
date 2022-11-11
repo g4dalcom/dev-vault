@@ -35,6 +35,7 @@
 	- [자료구조 - 기본](/Studying/CS/자료구조_기본.md)
 	- [자료구조 - Array와 Linked List](/Studying/CS/자료구조_Array_Linked_List.md)
 	- [자료구조 - Stack and Que](/Studying/CS/자료구조_Stack_&_Que.md)
+	- [DP - Dynamic Programming](/Studying/CS/DP_DynamicProgramming.md)
 
 
 - ### Grammar
