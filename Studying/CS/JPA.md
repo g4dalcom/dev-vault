@@ -4,7 +4,7 @@ class : CS
 ---
 
 
-### JPA & SQL
+### JPA
 
 #### JPA(Java Persistence API)
 
@@ -30,43 +30,3 @@ JPA는 자바 언어를 DB가 이해할 수 있게하고 나아가 SQL을 쓰지
     -   객체 간의 매핑 설계를 잘못했을 때 성능 저하가 발생할 수 있으며, 자동으로 생성되는 쿼리가 많기 때문에 개발자가 의도하지 않는 쿼리로 인해 성능이 저하되기도 한다.
 -   학습 시간
     -   JPA를 제대로 사용하려면 알아야 할 것이 많아서 학습하는 데 시간이 오래 걸린다.
-
-테이블 = 엑셀시트 = Domain / Entity
-
-SQL = 조회해오는 기능 = Repository
-
-SQL
-
-### 테이블 생성
-
-```java
-CREATE TABLE IF NOT EXISTS courses (
-    id bigint NOT NULL AUTO_INCREMENT, 
-    title varchar(255) NOT NULL,
-    tutor varchar(255) NOT NULL,
-    PRIMARY KEY (id)
-);
-```
-
-courses 라는 테이블이 없다면 생성하라
-
-bigint = Long / varchar = String
-
-not null = 비어있으면 안 됨
-
-auto_increment = 자동으로 1씩 증가
-
-primary key (id) = 고유한값(구분할 수 있는 값)으로 id를 쓰겠다
-
-### 데이터 삽입
-
-```java
-INSERT INTO courses (title, tutor) VALUES
-    ('웹개발의 봄, Spring', '남병관'), ('웹개발 종합반', '이범규');
-```
-
-### 데이터 조회
-
-```java
-SELECT * FROM courses;
-```
