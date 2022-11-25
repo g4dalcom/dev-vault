@@ -145,7 +145,7 @@ public class Main {
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FPhmmB%2FbtrRXD0fEvk%2FX4wPepKjboUjF26CXOlKL1%2Fimg.jpg)
 - 다시 손으로 써보면서 차근차근 순서를 생각해보자!
-- N, M을 입력받고 출력을 위한 arr 배열과, 방문여부를 가릴 visit 배열 선언
+- N, M을 입력받고 출력을 위한 arr 배열과, 방문여부를 가릴 visit 배열을 전역변수로 선언
 	- visit = [F F F F F] (편의상 0번 인덱스는 생각하지 않을 예정)
 	- arr = [0 0]
 - dfs(0) 호출
