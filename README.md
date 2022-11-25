@@ -27,7 +27,7 @@
 	- [자바가상머신(JVM)](/Studying/CS/자바가상머신(JVM).md)
 	- [쿠키와 세션](/Studying/CS/쿠키와_세션(Cookie&Session).md)
 	- [IoC와 DI & Bean](/Studying/CS/IoC(Inversion_of_Control)와_DI(Dependency_Injection)_&_Bean.md)
-	- [JPA](JPA.md)
+	- [JPA](/Studying/CS/JPA.md)
 	- [JWT 토큰](/Studying/CS/JWT.md)
 	- [MVC 패턴](/Studying/CS/MVC패턴.md)
 	- [restAPI에서 PUT & PATCH](/Studying/CS/restAPI에서_PUT_PATCH.md)
