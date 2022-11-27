@@ -1,3 +1,5 @@
+# filter와 interceptor
+
 - `filter` 와 `interceptor` 는 `AOP` 와 함께 공통 기능을 모아서 처리할 수 있는 방법을 제공한다.
 - `filter` 는 `Dispatcher Servlet에 요청이 전달되기 전/후` 로 스프링 컨테이너가 아닌 톰캣과 같은 `웹 컨테이너` 에 의해 관리된다. Fileter 인터페이스에는 필터 객체를 초기화하고 서비스에 추가하기 위한 init() 메서드, 전/후 처리를 위한 doFilter() 메서드, 종료를 위한 destory() 메서드가 있다.
 - `interceptor` 는 `Controller` 를 호출하기 전/후에 `스프링 컨텍스트` 에서 동작한다. `HandlerInterceptor` 의 메서드로는 Controller가 호출되기 전에 하는 전처리 작업을 위한 preHandle(), 후처리 작업을 위한 postHandle(), View 렌더링 후 리소스를 반환하기 위한 afterCompletion() 메서드가 있다.
