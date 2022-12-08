@@ -1,4 +1,4 @@
-![](https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif)
+![](https://blog.kakaocdn.net/dn/d5jiRY/btrS9pZGDEC/n9uJyExA6AQg6zPAKj5eIK/img.gif)
 
 - 이분 탐색(이진 탐색) 알고리즘은 `정렬되어 있는 리스트`에서 탐색 범위를 절반씩 좁혀가며 데이터를 탐색하는 방법이다.
 - 변수 3개(start, mid, end)를 사용해서 탐색을 한다.
@@ -13,6 +13,7 @@
 	- 6 7 8 중 중간인 7(mid) = 7(찾고자 하는 수) 이므로 탐색을 종료한다.
 
 - 소스 코드 - 반복문
+
 ```java
 public static int binarySearch(int arr[], int target) {
   int mid;
@@ -41,6 +42,7 @@ public static int binarySearch(int arr[], int target) {
 ```
 
 - 소스코드 - 재귀
+
 ```java
 public static int binarySearch(int[] arr, int target, int start, int end) {
 
