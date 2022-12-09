@@ -1,10 +1,11 @@
 # Spring WEb MVC의 Dispatcher Servlet 동작원리
 
-- 클라이언트의 요청을 Dispatcher Servlet이 최초로 받고 요청 정보를 통해 위임할 컨트롤러를 찾아서 `HandlerMapping` 에 전달한다. 
-- `HandlerMapping` 에서 `Contoller`  에 처리를 요청하고 controller가 처리한 요청을 `HandlerAdapter` 에서 ModelAndView 객체로 변환하여 dispatcher servlet 에 전달한다.
-- dispatcher servlet은 전달받은 ModelAndView 객체를 이용해 매핑되는 view를 검색한다.
-- `ViewResolver` 에서 처리 결과를 view에 전달하고 결과물을 dispatcher servlet에 전달한다.
-- dispatcher servlet에서 최종 결과물을 클라이언트에게 응답한다.
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHgZeJ%2FbtrfoTlO2uZ%2F14G2NA51AuEf8sSpemccv0%2Fimg.jpg)
+
+- 클라이언트의 요청을 Dispatcher Servlet이 최초로 받고 요청 정보를 통해 위임할 컨트롤러를 찾기위해 `HandlerMapping` 에게 물어본다. 
+- `HandlerMapping` 에서 해당 컨트롤러를 알려주면 `HandlerAdapter` 에게 위임하고 `HandlerAdapter` 가 `Controller` 에게 처리를 요청한다.
+- `Controller` 는 서비스를 호출하여 비즈니스 로직을 처리하고 처리된 요청은 `HandlerAdapter` 가 ModelAndView 객체로 변환해서  `dispatcher servlet` 에게 전달한다.
+- dispatcher servlet은  `ViewResolver` 를 통해 필요한 뷰를 전달받아서 내용을 생성하고 클라이언트에게 응답을 한다.
 
 ---
 
@@ -26,5 +27,6 @@
 ### 연관자료
 - [[Dispatcher-Servlet]]
 - [Dispatcher Servlet 동작원리](https://velog.io/@ejung803/Spring-Web-MVC%EC%9D%98-Dispatcher-Servlet%EC%9D%98-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
+- [Dispatcher Servelt 코드로 보는 동작원리](https://yejun-the-developer.tistory.com/m/4)
 - [[IoC(Inversion_of_Control)와_DI(Dependency_Injection)_&_Bean]]
 - [DI-의존성주입]
