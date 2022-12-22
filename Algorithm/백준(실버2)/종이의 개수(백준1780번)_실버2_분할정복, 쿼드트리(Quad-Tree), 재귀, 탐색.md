@@ -69,40 +69,40 @@ public class Main {
         System.out.println(minus + "\n" + zero + "\n" + plus);
     }
 
-    public static void cutting(int col, int row, int size) {
+    public static void cutting(int row, int col, int size) {
         /**
          * 첫 요소를 기준으로 종이 내에 모든 요소가 같은지를 체크한다.
          * 모두 같다면 해당 요소 변수를 카운팅해준다!
          * 같지 않다면 종이를 가로세로 3등분하고 9개로 나누어진 구역들을 각각 cutting 메서드로 부른다!
          */
-        if (isSameNumber(col, row, size)) {
-            if (papers[col][row] == -1) minus++;
-            else if (papers[col][row] == 0) zero++;
+        if (isSameNumber(row, col, size)) {
+            if (papers[row][col] == -1) minus++;
+            else if (papers[row][col] == 0) zero++;
             else plus++;
 
         } else {
 
             int cuttingSize = size / 3;
 
-            cutting(col, row, cuttingSize);
-            cutting(col, row+cuttingSize, cuttingSize);
-            cutting(col, row+cuttingSize*2, cuttingSize);
-            cutting(col+cuttingSize, row, cuttingSize);
-            cutting(col+cuttingSize, row+cuttingSize, cuttingSize);
-            cutting(col+cuttingSize, row+cuttingSize*2, cuttingSize);
-            cutting(col+cuttingSize*2, row, cuttingSize);
-            cutting(col+cuttingSize*2, row+cuttingSize, cuttingSize);
-            cutting(col+cuttingSize*2, row+cuttingSize*2, cuttingSize);
+            cutting(row, col, cuttingSize);
+            cutting(row, col+cuttingSize, cuttingSize);
+            cutting(row, col+cuttingSize*2, cuttingSize);
+            cutting(row+cuttingSize, col, cuttingSize);
+            cutting(row+cuttingSize, col+cuttingSize, cuttingSize);
+            cutting(row+cuttingSize, col+cuttingSize*2, cuttingSize);
+            cutting(row+cuttingSize*2, col, cuttingSize);
+            cutting(row+cuttingSize*2, col+cuttingSize, cuttingSize);
+            cutting(row+cuttingSize*2, col+cuttingSize*2, cuttingSize);
 
         }
     }
 
-    public static boolean isSameNumber(int col, int row, int size) {
+    public static boolean isSameNumber(int row, int col, int size) {
         /* 첫번째 요소를 기준으로 체크 */
-        int Num = papers[col][row];
+        int Num = papers[row][col];
 
-        for (int i = col; i < col+size; i++) {
-            for (int j = row; j < row+size; j++) {
+        for (int i = row; i < row+size; i++) {
+            for (int j = col; j < col+size; j++) {
                 if (papers[i][j] != Num) {
                     return false;
                 }
