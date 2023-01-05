@@ -5,6 +5,7 @@
 
 - [자바_알고리즘 풀이를 위한 입출력 메소드](/Algorithm/자바_알고리즘_풀이를_위한_입출력메소드.md)
 - [깊이우선탐색(DFS), 너비우선탐색(BFS) 개념정리](/Algorithm/깊이우선탐색(DFS)_너비우선탐색(BFS)_개념정리.md)
+- [그리디 알고리즘(Greedy Algorithm, 탐욕법)](/Algorithm/그리디 알고리즘(Greedy Algorithm, 탐욕법).md)
 - [이분탐색(Binary Search)](/Algorithm/이분_탐색(Binary_Search).md)
 - [알고리즘 문제풀이(1~10)](/Algorithm/문제풀이(1~10))
 - [알고리즘 문제풀이(11~20)](/Algorithm/문제풀이(11~20))
