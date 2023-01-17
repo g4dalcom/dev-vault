@@ -17,3 +17,4 @@
 - [Apache, nginX 차이](https://bentist.tistory.com/80)
 - [Apche, nginX 차이 비교](https://rootkey.tistory.com/143)
 - [NginX란](https://ssdragon.tistory.com/60)
+- [NginX란, apache와 차이점](https://dallog.github.io/what_is_nginx/)
