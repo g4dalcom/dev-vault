@@ -30,6 +30,10 @@
 
 - ### [CS DIARY](/Studying/CS_DIARY)
 
+- ### SQLD
+	- [객체지향프로그래밍](/Studying/CS/객체지향프로그래밍.md)(/Studying/SQLD/Entity.md)
+
+
 - ### Computer Science
 	- [객체지향프로그래밍](/Studying/CS/객체지향프로그래밍.md)
 	- [자바가상머신(JVM)](/Studying/CS/자바가상머신(JVM).md)
