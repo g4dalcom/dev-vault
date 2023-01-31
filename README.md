@@ -31,7 +31,7 @@
 - ### [CS DIARY](/Studying/CS_DIARY)
 
 - ### SQLD
-	- [객체지향프로그래밍](/Studying/CS/객체지향프로그래밍.md)(/Studying/SQLD/Entity.md)
+	- [Entity](/Studying/SQLD/Entity.md)
 
 
 - ### Computer Science
