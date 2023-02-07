@@ -48,8 +48,9 @@
 	- [Dispatcher-Sevlet](/Studying/CS/Dispatcher-Servlet.md)
 	- [자료구조 - 기본](/Studying/CS/자료구조_기본.md)
 	- [자료구조 - Array와 Linked List](/Studying/CS/자료구조_Array_Linked_List.md)
-	- [자료구조 - Stack and Que](/Studying/CS/자료구조_Stack_&_Que.md)
+	- [자료구조 - Stack and Queue](/Studying/CS/자료구조_Stack_&_Queue.md)
 	- [DP - Dynamic Programming](/Studying/CS/DP_DynamicProgramming.md)
+	- [자료구조 - Deque(덱_데크)](/Studying/CS/Deque(덱_데크).md)
 
 
 - ### Grammar
