@@ -13,7 +13,7 @@
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbDHCik%2FbtrYhbDUEA0%2FeC5Ng19lk53l3X4pkjYfuk%2Fimg.png)
 - 자바 1.6부터 지원하게 된 Deque는 Queue 인터페이스를 확장하여 만든 `인터페이스`이다.
 - 덱은 Double-Ended Queue의 줄임말로 큐의 양쪽에서 데이터를 넣고 뺄 수 있는 자료구조이다. 하나의 자료구조에 Queue와 Stack을 합쳐놓은 형태라고 생각하면 된다.
-- 인덱스를 통해 검색, 추가, 삭제가 어렵다.
+- 인덱스를 통해 검색, 추가, 삭제가 불가능하다.
 
 
 # Deque 사용법
