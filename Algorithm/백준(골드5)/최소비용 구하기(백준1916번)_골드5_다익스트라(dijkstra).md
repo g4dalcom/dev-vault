@@ -98,21 +98,21 @@ public class Main {
 
             /**
              * 현재 노드의 도착 지점들을 하나씩 꺼내서
-             * dist[도착 지점]에 도착 지점의 최소비용을 갱신한다.
+             * dp[도착 지점]에 도착 지점의 최소비용을 갱신한다.
              * 1의 도착 지점인 2, 3, 4, 5의 각 도착 지점들(2의 경우 4, 3의 경우 4, 5)의 비용과
              * 현재 노드까지의 비용 + 해당 도착 지점으로 갈 때 드는 비용을 비교해서 더 작은 값을 저장한다.
              * 
              * 5의 경우,
-             * 처음 1의 도착 지점으로 선택되었을 때 dist[1] + 10(1 -> 5의 fare) 로 dist[5] = 10 이 된다.
-             * 그리고 3의 도착 지점으로 선택되었을 때 dist[3] + 1(3 -> 5의 fare) 로 dist[5] = 4로 갱신이 된다.
+             * 처음 1의 도착 지점으로 선택되었을 때 dp[1] + 10(1 -> 5의 fare) 로 dp[5] = 10 이 된다.
+             * 그리고 3의 도착 지점으로 선택되었을 때 dp[3] + 1(3 -> 5의 fare) 로 dp[5] = 4로 갱신이 된다.
              */
             if (!visit[curEnd]) {
                 visit[curEnd] = true;
 
                 for (Node node : info.get(curEnd)) {
-                    if (!visit[node.end] && dp[node.end] > dist[curEnd] + node.fare) {
+                    if (!visit[node.end] && dp[node.end] > dp[curEnd] + node.fare) {
                         dp[node.end] = dp[curEnd] + node.fare;
-                        pq.add(new Node(node.end, dist[node.end]));
+                        pq.add(new Node(node.end, dp[node.end]));
                     }
                 }
             }
