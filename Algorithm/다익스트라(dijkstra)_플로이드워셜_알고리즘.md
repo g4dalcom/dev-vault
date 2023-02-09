@@ -116,3 +116,8 @@ class Node implements Comparable<Node>{
 		}
 ```
 - 중간 경로(k)를 거칠 때와 거치지 않을 때를 비교한다.
+
+---
+### 관련 자료
+
+- [[알고리즘/ 그래프] 다익스트라(Dijkstra) vs 플로이드 와샬(Floyd Warshall) (JAVA)](https://loosie.tistory.com/146)
