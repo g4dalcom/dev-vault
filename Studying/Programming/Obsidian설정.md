@@ -84,7 +84,16 @@
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdLSf3A%2FbtrZa3LikHs%2F6j6gJvb8tLtdkmAWuVWq90%2Fimg.png)
 - 만약 내 obsidian vault 폴더 중에 깃허브에 올리고 싶지 않은 폴더가 있다면 vault 폴더에서 .gitinore.txt를 만든 후 ignore 할 폴더명을 위와 같이 써주면 된다!
 
-#### 6. 티스토리에 게시하기
+#### 6. 깃허브에 게시하기
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fw4W1I%2FbtrZbPFKGDM%2Fn44WBRAvJbNPgk4Y9LlTs1%2Fimg.png)
+- 수정된 내용이 있다면 github desktop을 실행하면 위처럼 tracking이 된다.
+- 커밋해주고 푸시해주면 깃허브에 그대로 반영이 된다!
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcWbTIx%2FbtrZbo9vXbk%2FElPOBP0WmZVeTA9tOu7jkk%2Fimg.png)
+
+
+#### 7. 티스토리에 게시하기
 
 - 마크다운으로 게시가 가능한 모든 블로그에 적용이 가능하다.
 
