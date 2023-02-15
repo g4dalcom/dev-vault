@@ -7,6 +7,7 @@
 
 ### 전체 선택자
 - HTML 페이지 내부의 모든 태그를 선택
+
 ```CSS
 * { 
 	box-sizing: border-box;
