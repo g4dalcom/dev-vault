@@ -26,7 +26,7 @@
 ##### 중간 피벗 정렬 방식
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMW5T0%2FbtrYqToHiQK%2FJkalPhtkjEAhHOdqz5N1F0%2Fimg.png)
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F38Cme%2FbtrYq5bz0Uh%2FHNYXtwpKx7DjOQVRkMGjPk%2Fimg.png)
+
 
 
 # 코드 구현
