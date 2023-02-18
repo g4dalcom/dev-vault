@@ -10,6 +10,7 @@
 - [이분탐색(Binary Search)](/Algorithm/이분_탐색(Binary_Search).md)
 - [다익스트라(dijkstra) & 플로이드워셜 알고리즘](/Algorithm/다익스트라(dijkstra)_플로이드워셜_알고리즘.md)
 - [퀵 정렬(Quick sort)](/Algorithm/퀵정렬(Quick_sort).md)
+- [투포인터(Two pointers) 알고리즘](/Algorithm/투포인터_알고리즘.md)
 - [알고리즘 백준(기초)](/Algorithm/백준(기초))
 - [알고리즘 백준(실버4)](/Algorithm/백준(실버4))
 - [알고리즘 백준(실버3)](/Algorithm/백준(실버3))
