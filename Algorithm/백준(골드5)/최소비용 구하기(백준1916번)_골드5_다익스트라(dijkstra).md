@@ -58,7 +58,7 @@ public class Main {
 
         visit = new boolean[N+1];                   // 방문 여부 체크할 배열
         dp = new int[N+1];                        // 각 노드별 최소 비용을 저장
-        Arrays.fill(dist, Integer.MAX_VALUE);
+        Arrays.fill(dp, Integer.MAX_VALUE);
 
         info = new ArrayList<>();
         for (int i = 0; i <= N; i++) {
@@ -87,7 +87,7 @@ public class Main {
         System.out.println(dijkstra(start, destination));
     }
 
-    public static int dijikstra(int start, int destination) {
+    public static int dijkstra(int start, int destination) {
         PriorityQueue<Node> pq = new PriorityQueue<>();
         pq.offer(new Node(start, 0));
         dp[start] = 0;        // 시작 노드부터 탐색!
