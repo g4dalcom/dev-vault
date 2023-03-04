@@ -190,3 +190,21 @@ public class Main {
     }
 }
 ```
+- 뱀이 방향을 바꾸어야 하는 부분을 저장하기 위해서 hashmap을 사용해보았다. 해시맵은 거의 사용해보지 않아서 사용방법을 찾아보면서 시도해보았는데 쉽지가 않았다 ㅠㅠ
+
+```java
+Iterator<Map.Entry<Integer, String>> iter = moving.entrySet().iterator();  
+while (iter.hasNext()) {  
+    Map.Entry<Integer, String> entry = iter.next();  
+    if (seconds == entry.getKey()) {  
+        if (entry.getValue().equals("D")) {  
+            direction = (direction + 1) % 4;  
+        } else {  
+            direction = (4 + (direction - 1)) % 4;  
+        }  
+    }  
+}
+```
+- LinkedHashMap을 사용한 이유는, 처음에 방향을 바꾸기 위한 로직을 위와 같이 짜기 위함이었는데 while문 안에 while문이 존재하고 전체적인 순서를 정하기가 너무 복잡했다.
+- 한참 고민하다가 다른 사람의 풀이를 참조했는데.... containsKey라는 메서드가 있어서 고민을 덜 수 있었다. 다른 문제풀이에서 해시맵을 일부러 이용해보면서 익숙해져야 할 것 같다. ㅠㅠ
+- [참고 사이트](https://velog.io/@kimmjieun/%EB%B0%B1%EC%A4%80-3190%EB%B2%88-%EB%B1%80-Java-%EC%9E%90%EB%B0%94)
