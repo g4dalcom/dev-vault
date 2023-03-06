@@ -11,6 +11,7 @@
 - [다익스트라(dijkstra) & 플로이드워셜 알고리즘](/Algorithm/다익스트라(dijkstra)_플로이드워셜_알고리즘.md)
 - [퀵 정렬(Quick sort)](/Algorithm/퀵정렬(Quick_sort).md)
 - [투포인터(Two pointers) 알고리즘](/Algorithm/투포인터_알고리즘.md)
+- [크루스칼 알고리즘](/Algorithm/크루스칼_알고리즘.md)
 - [알고리즘 백준(골드4)](/Algorithm/백준(골드4))
 - [알고리즘 백준(골드5)](/Algorithm/백준(골드5))
 - [알고리즘 백준(실버1)](/Algorithm/백준(실버1))
