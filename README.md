@@ -28,6 +28,7 @@
 - ### [CS DIARY](/Studying/CS_DIARY)
 
 - ### [SQLD](/Studying/SQLD)
+	- [SQL 문제풀이](/Studying/SQLD/프로그래머스)
 
 - ### Computer Science
 	- [객체지향프로그래밍](/Studying/CS/객체지향프로그래밍.md)
