@@ -72,6 +72,7 @@
 	- [자바스크립트_원시 자료형과 참조 자료형(얕은 복사, 깊은 복사)](/Studying/Grammar/자바스크립트_원시자료형과_참조자료형(얕은_복사와_깊은_복사).md)
 	- [자바스크립트_클로저(Closure)](/Studying/Grammar/자바스크립트_클로저(Closure).md)
 	- [자바스크립트_클래스](/Studying/Grammar/자바스크립트_클래스.md)
+	- [자바스크립트_프로토타입(Prototype)](/Studying/Grammar/자바스크립트_프로토타입(Prototype).md)
 
 
 
