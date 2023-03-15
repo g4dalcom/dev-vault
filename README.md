@@ -71,6 +71,7 @@
 	- [파이썬_정렬함수 sorted(), sort()](/Studying/Grammar/파이썬_정렬함수sorted.md)
 	- [자바스크립트_원시 자료형과 참조 자료형(얕은 복사, 깊은 복사)](/Studying/Grammar/자바스크립트_원시자료형과_참조자료형(얕은_복사와_깊은_복사).md)
 	- [자바스크립트_클로저(Closure)](/Studying/Grammar/자바스크립트_클로저(Closure).md)
+	- [자바스크립트_클래스](/Studying/Grammar/자바스크립트_클래스.md)
 
 
 
@@ -97,7 +98,7 @@
 	- [스프링_Filter_GenericFilterBean과 OncePerRequestFilter의 차이](/Studying/Programming/스프링_GenericFilterBean_OncePerRequestFilter.md)
 	- [Obsidian으로 깃허브와 블로그 간편하게 관리하기](/Studying/Programming/Obsidian설정.md)
 	- [CSS 셀렉터](/Studying/Programming/CSS_Selector.md)
-	- [자바스크립트](/Studying/Programming/자바스크립트_Random.md)
+	- [자바스크립트_Random](/Studying/Programming/자바스크립트_Random.md)
 
 
 
