@@ -71,7 +71,7 @@
 
 ---
 
-### 🔍 정답
+### 🔍 정답(내 풀이)
 
 ```java
 import java.util.*;
@@ -99,3 +99,23 @@ class Solution {
 }
 ```
 - 큐에 페인트를 칠해야 할 영역을 넣어주고 가장 첫번째 영역부터 롤러의 길이만큼의 영역을 탐색하며 큐에서 제거한다.  모든 탐색이 끝나면 카운팅을 하고 큐가 빌 때까지 반복하면 된다!
+
+
+### 💡 정답 (다른 사람 풀이)
+
+```java
+class Solution {
+    public int solution(int n, int m, int[] section) {
+        int cnt = 1;
+        int roller = section[0];
+        for (int i = 1; i < section.length; i++) {
+            if (roller + m - 1 < section[i]) {
+                cnt++;
+                roller = section[i];
+            }
+        }
+        return cnt;
+    }
+}
+```
+- 결과적으로 보면 나와 비슷한 접근방법인데 훨씬 간결하고 낭비가 없다. 
