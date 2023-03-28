@@ -6,6 +6,18 @@
 - https://www.google.com/images/cat.png 의 경우 cat.png 라는 자원의 위치를 가리키므로 URI이면서 URL이다.
 - https://www.google.com/user?id=hello 의 경우 https://www.google.com/user 까지는 유저라는 자원의 위치를 가리키므로 URI이자 URL이지만 쿼리스트링으로 붙은 id=hello 부분은 자원 중에서도 식별하기 위한 문자열이므로 URI라고만 할 수 있다.
 
+##### 참고 (URL과 URI 구성)
+- query, fragment(#)는 URI에만 해당함
+| 부분                             | 명칭     | 설명                                                                                |
+|:-------------------------------- |:-------- |:----------------------------------------------------------------------------------- |
+| file://, http://, https://       | scheme   | 통신 프로토콜                                                                       |
+| 127.0.0.1, www.google.com        | hosts    | 웹 페이지, 이미지, 동영상 등의 파일이 위치한 웹 서버, 도메인 또는 IP                |
+| :80, :443, :3000                 | port     | 웹 서버에 접속하기 위한 통로                                                        |
+| /search, /Users/username/Desktop | url-path | 웹 서버의 루트 디렉토리로부터 웹 페이지, 이미지, 동영상 등의 파일이 위치까지의 경로 |
+| ?=Javascript                     | query    | 웹 서버에 전달하기 위한 추가 질문                                                                                    |
+
+
+
 # MVC 패턴
 
 - 애플리케이션을 Model - View - Controller 라는 세 가지 역할로 구분해서 비즈니스 로직과 인터페이스를 분리한 디자인 패턴이다. 어느 한 쪽이 변경되어도 다른 쪽은 영향을 받지 않기 때문에 유지보수에 용이하다.
