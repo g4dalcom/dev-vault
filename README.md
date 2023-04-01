@@ -12,6 +12,7 @@
 - [퀵 정렬(Quick sort)](/Algorithm/퀵정렬(Quick_sort).md)
 - [투포인터(Two pointers) 알고리즘](/Algorithm/투포인터_알고리즘.md)
 - [크루스칼 알고리즘](/Algorithm/크루스칼_알고리즘.md)
+- [인덱스 회전(나머지 연산)](/Algorithm/인덱스_회전(나머지_연산).md)
 - [알고리즘 백준(골드4)](/Algorithm/백준(골드4))
 - [알고리즘 백준(골드5)](/Algorithm/백준(골드5))
 - [알고리즘 백준(실버1)](/Algorithm/백준(실버1))
