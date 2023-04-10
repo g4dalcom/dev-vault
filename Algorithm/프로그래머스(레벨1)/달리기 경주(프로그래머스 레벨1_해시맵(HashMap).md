@@ -97,4 +97,42 @@ for (String player : map.keySet()) {
 ```
 - break를 걸어서 탐색을 최소화하여도 몇 테스트케이스에서 시간초과가 발생한다.
 - 그래서 HashMap 두 개를 선언해서 각각 <플레이어, 등수> <등수, 플레이어> 로 놓고 두 가지를 모두 갱신하며 진행하였다.
-- 굳이 HashMap을 두 개 선언하지 않고 players 배열과 HahMap 하나를 이용해서 풀이한 것들도 있었다!
+
+
+### 🔎 정답
+
+```java
+import java.util.*;
+
+class Solution {
+    public String[] solution(String[] players, String[] callings) {
+        HashMap<String, Integer> map = new LinkedHashMap<>();
+        
+        // 해시맵에 초깃값 담아주기
+        for (int i = 0; i < players.length; i++) {
+            map.put(players[i], i);
+        }
+        
+        for (String race : callings) {
+            int cur = map.get(race);            // 따라잡은 플레이어 현재 등수
+            int prev = map.get(race) - 1;       // 앞 등수
+            String caught = players[prev];      // 앞 플레이어
+            
+            // 순위 스위칭
+            players[prev] = race;
+            players[cur] = caught;
+            
+            map.put(race, prev);
+            map.put(caught, cur);
+        }
+        
+        String[] result = new String[players.length];
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            result[entry.getValue()] = entry.getKey();
+        }
+        
+        return result;
+    }
+}
+```
+- 해시맵을 두 개 선언하지 않고 기존에 있던 players 배열을 그대로 이용하는 방법도 있다!
