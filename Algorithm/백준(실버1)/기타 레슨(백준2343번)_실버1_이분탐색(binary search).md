@@ -103,16 +103,6 @@ if (cnt > M) {
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F37T1x%2Fbtr9N1IWiX7%2FfCFrHULdlklRLj7nKZtG30%2Fimg.png)
 - 이러한 흐름으로 left가 right를 초과하는 순간까지 점점 탐색의 범위를 좁혀가며 최적값을 찾게된다.
-- 이 때 우리가 구해야하는 것은 블루레이 크기의 최솟값(하한)이다.
-
-
-### 이분 탐색에서 lower_bound(하한), upper_bound(상한)
-- 하한(Lower bound)은 찾고자 하는 값 이상의 값이 처음 나타나는 위치
-- 상한(Upper bound)은 찾고자 하는 값을 초과한 처음 위치
-	- 찾고자 하는 값 : 4
-	- 주어진 배열 : 1 2 2 4 4 4 6 7 7 9
-	- Lower bound는 4 이상이 처음 나타나는 3번 인덱스
-	- Upper bound는 4 초과하는 값이 처음 나타나는 6번 인덱스
-
-- 위와 같은 조건에 의해서 left 값을 반환하면 된다!
-- 만약 상한값을 찾아야했다면 left - 1을 반환하면 되었을 것이다!
+- 일반적인 이분 탐색이라면 `cnt == M` 인 순간(target값과 일치해지는 순간) mid값을 리턴하면 되지만, 우리가 구해야하는 것은 M과 일치한 것뿐만 아니라 최솟값이어야 한다.
+- 경우에 따라 cnt = 3 인 조합이 여러개 나올 수 있기 때문!
+- 그러므로 left > right 가 되는 지점까지 탐색을 한 후에 left 값을 리턴하면 된다!
