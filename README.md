@@ -81,6 +81,7 @@
 
 - ### JavaScript&React
 	- [(자바스크립트) 동기&비동기 and 콜백함수](Studying/JavaScript&React/자바스크립트_동기&비동기_콜백함수.md)
+	- [(자바스크립트) 비동기 통신 & 프로미스(Promise)](Studying/JavaScript&React/자바스크립트_비동기통신_Promise.md)
 	- [(자바스크립트) 배열 내장 메소드](Studying/JavaScript&React/자바스크립트_배열내장메서드.md)
 	- [(자바스크립트) 원시자료형과 참조자료형(얕은 복사와 깊은 복사)](Studying/JavaScript&React/자바스크립트_원시자료형과_참조자료형(얕은_복사와_깊은_복사).md)
 	- [(자바스크립트) 클래스(Class)](Studying/JavaScript&React/자바스크립트_클래스.md)
