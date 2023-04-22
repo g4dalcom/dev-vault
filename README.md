@@ -71,7 +71,7 @@
 	- [(스프링) Lombok을 올바르게 사용하는 방법](Studying/Java&Spring/Lombok을_올바르게_사용하는_방법.md)
 	- [의존성 주입(Dependency Injection)](Studying/Java&Spring/의존성_주입(DI).md)
 	- [(자바) 자바의 메모리 구조](Studying/Java&Spring/자바_메모리_구조.md)
-	- [(자바) Arrays](Studying/Java&Spring/자바_Arrays.md)
+	- [(자바) 배열(Array) 다루기](자바_배열(Array)_다루기.md)
 	- [(자바) BigInteger](Studying/Java&Spring/자바_BigInteger.md)
 	- [(자바) Coupling](Studying/Java&Spring/자바_Coupling.md)
 	- [(자바) List toArray](Studying/Java&Spring/자바_List_toArray.md)
