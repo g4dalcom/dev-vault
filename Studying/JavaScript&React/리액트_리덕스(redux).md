@@ -255,7 +255,7 @@ export function Counter() {
 ![](https://blog.kakaocdn.net/dn/lxFy6/btsb2TB9EkP/kAmvpCJ7akifkKnZ6Cduu0/img.gif)
 - UI에서 컴포넌트 내에 존재하는 이벤트가 호출
 - 이벤트와 연결된 **액션 생성자**가 호출
-- 액션 생성자에서 생성된 **액션**이 호출됩니다.
+- 액션 생성자에서 생성된 **액션**이 호출
 - **디스패치**가 **액션**을 **리듀서**로 전달
 - **리듀서**에서 디스패치된 액션에 따라 상태값을 변경
 - 변경사항이 렌더링
