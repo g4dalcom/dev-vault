@@ -1,3 +1,5 @@
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAIkLj%2FbtscArEpPZ1%2F9xBblAr8hlWWsrVDa8lKx1%2Fimg.png)
+
 # Promise 등장 배경
 
 - 자바스크립트에서 비동기 처리를 위해서 전통적으로 콜백 함수를 사용하였다. 
