@@ -1,4 +1,4 @@
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAIkLj%2FbtscArEpPZ1%2F9xBblAr8hlWWsrVDa8lKx1%2Fimg.png)
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcbXflG%2FbtscfBWLL0H%2FHypI9tlepPxTvzPKhsZfE1%2Fimg.png)
 
 # Promise 등장 배경
 
