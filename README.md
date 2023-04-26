@@ -3,6 +3,7 @@
 ### ⭐ 최근 업데이트
 
 - [\[알고리즘\] 단어 수학(백준1399번), 골드4, 그리디](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C4)/%EB%8B%A8%EC%96%B4%20%EC%88%98%ED%95%99(%EB%B0%B1%EC%A4%801339%EB%B2%88)_%EA%B3%A8%EB%93%9C4_%EA%B7%B8%EB%A6%AC%EB%94%94(greedy).md)
+- [\[알고리즘\] 특정한 최단 경로(백준1504번), 골드4, 다익스트라](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C4)/%ED%8A%B9%EC%A0%95%ED%95%9C%20%EC%B5%9C%EB%8B%A8%20%EA%B2%BD%EB%A1%9C(%EB%B0%B1%EC%A4%801504%EB%B2%88)_%EA%B3%A8%EB%93%9C4_%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC(dijkstra).md)
 - [\[자바\] 배열(Array) 다루기](Studying/Java&Spring/자바_배열(Array)_다루기.md)
 - [\[자바스크립트\] 비동기 통신 & 프로미스(Promise)](Studying/JavaScript&React/자바스크립트_비동기통신_Promise.md)
 - [\[리액트\] 리액트 리덕스(Redux)](Studying/JavaScript&React/리액트_리덕스(redux).md)
