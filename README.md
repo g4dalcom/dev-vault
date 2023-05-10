@@ -9,6 +9,7 @@
 - [\[리액트\] 리액트 리덕스(Redux)](Studying/JavaScript&React/리액트_리덕스(redux).md)
 - [(자바스크립트) 비동기 통신 & Async/Await](Studying/JavaScript&React/자바스크립트_비동기통신_Async_Await.md)
 - [\[알고리즘\] 텀 프로젝트(백준9466번), 골드3, 그래프 탐색, dfs](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C3)/%ED%85%80%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8(%EB%B0%B1%EC%A4%809466%EB%B2%88)_%EA%B3%A8%EB%93%9C3_%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89%2C%20dfs.md)
+- [\[알고리즘\] 가장 긴 증가하는 부분 수열2, 골드2, 이분 탐색](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C2)/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B4%202(%EB%B0%B1%EC%A4%8012015%EB%B2%88)_%EA%B3%A8%EB%93%9C2_%EC%9D%B4%EB%B6%84%20%ED%83%90%EC%83%89%2C%20%EC%9D%B4%EC%A7%84%20%ED%83%90%EC%83%89%2C%20binary%20search.md)
 
 
 ### 🔎 Algorithm
