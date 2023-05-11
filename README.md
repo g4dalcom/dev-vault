@@ -19,6 +19,7 @@
 - [그리디 알고리즘(Greedy Algorithm, 탐욕법)](/Algorithm/그리디_알고리즘(Greedy_Algorithm,_탐욕법).md)
 - [재귀 알고리즘, 선언형 프로그래밍](/Algorithm/재귀_알고리즘_선언적프로그래밍.md)
 - [이분탐색(Binary Search)](/Algorithm/이분_탐색(Binary_Search).md)
+- [이진 트리 & 이진 탐색 트리 & 트리 순회](/Algorithm/이진_트리_&_이진_탐색_트리 순회(Tree_Travelsal).md)
 - [다익스트라(dijkstra) & 플로이드워셜 알고리즘](/Algorithm/다익스트라(dijkstra)_플로이드워셜_알고리즘.md)
 - [퀵 정렬(Quick sort)](/Algorithm/퀵정렬(Quick_sort).md)
 - [버블정렬(Bubble sort)](/Algorithm/버블정렬(Bubble_sort).md)
