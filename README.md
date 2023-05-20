@@ -90,6 +90,7 @@
 	- [(자바) List toArray](Studying/Java&Spring/자바_List_toArray.md)
 	- [(자바) Queue](Studying/Java&Spring/자바_Queue.md)
 	- [(자바) String](Studying/Java&Spring/자바_String.md)
+	- [(자바) 제네릭(Generic)](Studying/Java&Spring/자바_제네릭(Generic).md)
 
 
 - ### JavaScript&React
