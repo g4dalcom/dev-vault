@@ -92,6 +92,7 @@
 	- [(자바) Queue](Studying/Java&Spring/자바_Queue.md)
 	- [(자바) String](Studying/Java&Spring/자바_String.md)
 	- [(자바) 제네릭(Generics)](Studying/Java&Spring/자바_제네릭(Generics).md)
+	- [(자바) 업캐스팅 & 다운캐스팅 이해하기](Studying/Java&Spring/자바_업캐스팅_다운캐스팅.md)
 
 
 - ### JavaScript&React
