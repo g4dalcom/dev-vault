@@ -109,6 +109,9 @@
 	- [(리액트) 리덕스(Redux)](Studying/JavaScript&React/리액트_리덕스(redux).md)
 
 
+- ### TypeScript
+	- [(타입스크립트) 타입스크립트의 인터페이스(Interface) 뿌시기](Studying/TypeScript/타입스크립트_인터페이스(Interface).md)
+
 - ### Python
 	- [기본자료형-문자열(String)](Studying/Python/파이썬_기본자료형_문자열(String).md)
 	- [리스트를 문자열로 변환하기](Studying/Python/파이썬_리스트를_문자열로_변환하기.md)
