@@ -68,17 +68,17 @@
 
 ```java
 public class HeapSort {
-	private static void heapify(int[] arr, int parentIdx, int lastIdx) {
+	private static void heapify(int[] arr, int parentIdx, int size) {
 		int left = 2 * parentIdx + 1;
 		int right = 2 * parentIdx + 2;
 		int largest = parentIdx;
 
 		// 비교
-		if (left < lastIdx && arr[largest] < arr[left]) {
+		if (left < size && arr[largest] < arr[left]) {
 			largest = left;
 		}
 
-		if (right < lastIdx && arr[largest] < arr[right]) {
+		if (right < size && arr[largest] < arr[right]) {
 			largest = right;
 		}
 
@@ -86,7 +86,7 @@ public class HeapSort {
 			int temp = arr[largest];
 			arr[largest] = arr[parentIdx];
 			arr[parentIdx] = temp;
-			heapify(arr, largest, lastIdx);
+			heapify(arr, largest, size);
 		}
 	}
 }
@@ -108,7 +108,7 @@ arr = {3, 7, 5, 4, 2, 8} 일 때,
 public class HeapSort {
 	public static void heapsort(int[] arr) {
 		// max heap 만들기
-		for (int i = arr.length/2 -1; i >= 0; i--) {
+		for (int i = (arr.length-1)/2; i >= 0; i--) {
 			heapify(arr, i, arr.length);
 		}
 	}
@@ -141,7 +141,7 @@ for (int i = arr.length-1; i > 0; i--) {
 ```java
 public static void heapsort(int[] arr) {
 	// max heap 만들기
-	for (int i = arr.length/2 - 1; i >= 0; i--) {
+	for (int i = (arr.length-1)/2; i >= 0; i--) {
 		heapify(arr, i, arr.length);
 	}
 
@@ -153,16 +153,16 @@ public static void heapsort(int[] arr) {
 		heapify(arr, 0, i);
 	}
 
-	private static void heapify(int[] arr, int parentIdx, int lastIdx) {
+	private static void heapify(int[] arr, int parentIdx, int size) {
 		int left = 2 * parentIdx + 1;
 		int right = 2 * parentIdx + 2;
 		int largest = parentIdx;
 
-		if (left < lastIdx && arr[largest] < arr[left]) {
+		if (left < size && arr[largest] < arr[left]) {
 			largest = left;
 		}
 
-		if (right < lastIdx && arr[largest] < arr[right]) {
+		if (right < size && arr[largest] < arr[right]) {
 			largest = right;
 		}
 
@@ -170,7 +170,7 @@ public static void heapsort(int[] arr) {
 			int temp = arr[largest];
 			arr[largest] = arr[parentIdx];
 			arr[parentIdx] = temp;
-			heapify(arr, largest, lastIdx);
+			heapify(arr, largest, size);
 		}
 	}
 }
@@ -182,7 +182,7 @@ public static void heapsort(int[] arr) {
 ```java
 public static void heapsort(int[] arr) {
 	// max heap 만들기
-	for (int i = arr.length/2 - 1; i >= 0; i--) {
+	for (int i = (arr.length-1)/2; i >= 0; i--) {
 		heapify(arr, i, arr.length);
 	}
 
@@ -194,12 +194,12 @@ public static void heapsort(int[] arr) {
 		heapify(arr, 0, i);
 	}
 
-	private static void heapify(int[] arr, int parentIdx, int lastIdx) {
+	private static void heapify(int[] arr, int parentIdx, int size) {
 		int left;
 		int right;
 		int largest;
 
-		while ((parentIdx * 2) + 1 <= lastIdx) {
+		while ((parentIdx * 2) + 1 < lastIdx) {
 			left = (parentIdx * 2) + 1;
 			right = (parentIdx * 2) + 2;
 			largest = parentIdx;
@@ -208,14 +208,13 @@ public static void heapsort(int[] arr) {
 				largest = left;
 			}
 
-			if (rigth <= lastIdx && arr[right] > arr[largest]) {
+			if (right < lastIdx && arr[right] > arr[largest]) {
 				largest = right;
 			}
 
 			if (largest != parentIdx) {
-				int temp = arr[largest];
-				arr[largest] = arr[parentIdx];
-				arr[parentIdx] = temp;
+				swap(nums, parentIdx, largest);
+				parentIdx = largest;
 			} 
 			else return;
 		}
