@@ -68,7 +68,7 @@ public class CountingSort {
 		for (int i = array.length - 1; i >= 0; i--) {
 			int value = array[i];
 			counting[value]--;
-			result[counting[value]] = value;
+			result[counting[value]-1] = value;
 		}
 	}
 }
