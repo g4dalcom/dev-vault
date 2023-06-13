@@ -106,7 +106,7 @@
 	- [(자바스크립트) 클로저(Closure)](Studying/JavaScript&React/자바스크립트_클로저(Closure).md)
 	- [(자바스크립트) 프로토타입(Prototype)](Studying/JavaScript&React/자바스크립트_프로토타입(Prototype).md)
 	- [(자바스크립트) Random](Studying/JavaScript&React/자바스크립트_Random.md)
-	- [(자바스크립트) Random](Studying/JavaScript&React/자바스크립트_패키지매니저.md)
+	- [(자바스크립트) 패키지 매니저](Studying/JavaScript&React/자바스크립트_패키지매니저.md)
 	- [(리액트) 리덕스(Redux)](Studying/JavaScript&React/리액트_리덕스(redux).md)
 
 
