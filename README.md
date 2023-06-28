@@ -127,8 +127,9 @@
 - ### Programming
 	- [3계층 관련](자바_Coupling.md)
 	- [Controller & HTTP message](스프링_Controller_HTTPmessage.md)
-	- [깃 매뉴얼(Source Tree 기준)](/Studying/Programming/깃_매뉴얼.md)
-	- [깃_Fork한 저장소에 PR하기](/Studying/Programming/깃_Fork한_저장소에_PR하기.md)
+	- [깃(Git)\_매뉴얼(Source Tree 기준)](/Studying/Programming/깃_매뉴얼.md)
+	- [깃(Git)\_Fork한 저장소에 PR하기](/Studying/Programming/깃_Fork한_저장소에_PR하기.md)
+	- [깃(Git)\_커밋 에디터(Commit Editor) 사용하기](/Studying/Programming/커밋_에디터_사용하기.md)
 	- [세팅_빌드와 배포 프로세스](/Studying/Programming/세팅_빌드및배포.md)
 	- [Security_JWT Token 인증방식](/Studying/Programming/JWT토큰인증방식.md)
 	- [Querydsl_basic](/Studying/Programming/Querydsl_basic.md)
