@@ -92,7 +92,7 @@ class Node implements Comparable<Node>{
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == j) {
-					floyd[i][j]	 =0;
+					floyd[i][j]	= 0;
 				} else floyd[i][j] = 1_000_000_000;
 			}
 		}
