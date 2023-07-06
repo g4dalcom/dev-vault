@@ -57,7 +57,6 @@ export default useSelector;
 - 드롭다운이나 select box 등 해당 요소가 선택되었는지(열렸는지) 여부를 확인하는 **state**와 해당 요소의 엘리먼트를 기억하는 **ref**, 그리고 해당 요소의 행동을 제어하는 **handler** 세 가지를 반환합니다.
 - 외부를 클릭했을 때 선택을 해제하거나 창을 닫아야 하는 경우 등 매우 많은 경우에 사용되는 유용한 훅입니다!
 
-- 우선 빠르게 모양부터 만들고 가봅니다.
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcaRkCo%2FbtsmBYtTLF4%2FyyG9dLAQ2nhFOw6fYI5KCK%2Fimg.png)
 
@@ -206,3 +205,161 @@ const SelectBox = ({ options, setOption }: Props) => {
 
 - 모양도 이쁘장하게 잘 나왔고 화면 크기에 따라 적당하게 조절이 됩니다.
 - 콘솔창을 보면 value 값이 변환되어서 전달되는 것을 알 수 있습니다!
+
+
+## 전체 코드
+
+### SelectBox
+
+```typescript
+import { useState } from "react";
+import * as S from "./style";
+import SelectArrow from "../../assets/icons/SelectArrow";
+import useDetectClose from "../../hooks/useDetectClose";
+
+interface Props {
+  options: string[];
+  setOption: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const SelectBox = ({ options, setOption }: Props) => {
+  const [isSelected, selectRef, selectHandler] = useDetectClose();
+  const [viewValue, setViewValue] = useState("정렬");
+
+  const handleSelectValue = (e: any) => {
+    const current = e.target.getAttribute("value");
+    setViewValue(current);
+
+    switch (current) {
+      case "최신순":
+        setOption("newest");
+        break;
+      case "오래된순":
+        setOption("oldest");
+        break;
+      case "좋아요순":
+        setOption("mostlike");
+        break;
+      case "조회수순":
+        setOption("mostview");
+        break;
+      case "가격낮은순":
+        setOption("priceasc");
+        break;
+      case "가격높은순":
+        setOption("pricedesc");
+        break;
+    }
+  };
+
+  return (
+    <S.SelectBox ref={selectRef} onClick={selectHandler}>
+      <S.Label>{viewValue}</S.Label>
+      <S.SelectOptions isOpen={isSelected}>
+        {options.map(option => (
+          <S.Option key={option} value={option} onClick={handleSelectValue}>
+            {option}
+          </S.Option>
+        ))}
+      </S.SelectOptions>
+      <SelectArrow />
+    </S.SelectBox>
+  );
+};
+
+export default SelectBox;
+```
+
+
+### style.ts
+
+```css
+import styled from "styled-components";
+
+export const SelectBox = styled.div`
+  position: relative;
+  width: 100px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 3px solid var(--color-darkblue);
+  border-radius: 40px;
+  background: radial-gradient(
+    190.97% 141.42% at 100% 100%,
+    rgba(247, 247, 247, 0.7) 0%,
+    rgba(247, 247, 247, 0.7) 100%
+  );
+  margin: 0 10px 12px 0;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-12);
+  font-weight: 700;
+  left: 10px;
+  top: 10px;
+
+  & svg {
+    position: absolute;
+    right: 3px;
+
+    @media (max-width: 767px) {
+      right: 0;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: 80px;
+    height: 20px;
+    border: 2px solid var(--color-darkblue);
+    font-weight: 500;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 90px;
+    height: 22px;
+    border: 2px solid var(--color-darkblue);
+  }
+`;
+
+export const Label = styled.span`
+  width: 90%;
+  text-align: center;
+`;
+
+export const SelectOptions = styled.ul<{ isOpen: boolean }>`
+  position: absolute;
+  top: 34px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: max-content;
+  max-height: ${props => (props.isOpen ? "none" : "0")};
+  padding: 0;
+  border: ${props =>
+    props.isOpen ? "2px solid var(--color-darkblue)" : "none"};
+  border-radius: 8px;
+  background: radial-gradient(
+    190.97% 141.42% at 100% 100%,
+    rgba(247, 247, 247, 0.7) 0%,
+    rgba(247, 247, 247, 0.7) 100%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #111;
+  appearance: none;
+`;
+
+export const Option = styled.li`
+  text-align: center;
+  padding: 6px 0;
+  transition: background-color 0.2s ease-in;
+  border-bottom: 1px solid var(--color-lightivory);
+
+  &:hover {
+    background-color: var(--color-darkgreen);
+  }
+`;
+
+```
