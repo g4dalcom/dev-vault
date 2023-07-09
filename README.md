@@ -113,6 +113,7 @@
 	- [(리액트) 커스텀 훅 만들어보기(useInput)](Studying/JavaScript&React/리액트_커스텀훅(useInput).md)
 	- [(리액트) 커스텀 셀렉트 박스(custom select-box)](Studying/JavaScript&React/리액트_커스텀_셀렉트박스(select_box).md)
 	- [(리액트) 경과 시간(날짜) 표시하기 & Intl API 겉핥기](Studying/JavaScript&React/리액트_경과시간표시_IntlAPI.md)
+	- [(Next.js) 페이지네이션(Pagination) 구현해보기](Studying/JavaScript&React/리액트_페이지네이션(Pagination).md)
 
 
 - ### TypeScript

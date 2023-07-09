@@ -268,3 +268,9 @@ const elapsedTime = (date: Date) => {
 export default elapsedTime;
 ```
 
+---
+
+### 참고 자료
+
+- [Intl API](https://dantechblog.gatsbyjs.io/posts/intl/)
+- [자바스크립트의 Intl API](https://www.daleseo.com/js-intl-api/)
