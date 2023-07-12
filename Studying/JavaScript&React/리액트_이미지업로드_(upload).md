@@ -83,56 +83,6 @@ const CollectionPage = () => {
 - 초기값은 1이므로 처음에는 하나의 폼만 그려내고 상품 추가 버튼을 누르면 formCount = 2가 되므로 두 개의 폼이 생기는 방식입니다.
 - 이 때 index를 넘겨주어서 폼을 구분하였습니다.
 
-#### CollectionForm.tsx
-
-```typescript
-interface Props {
-  images: File[];
-  setImages: React.Dispatch<React.SetStateAction<File[]>>;
-  contents: ContentsProps[];
-  setContents: React.Dispatch<React.SetStateAction<ContentsProps[]>>;
-  index: number;
-}
-
-const CollectionForm = ({
-  images,
-  setImages,
-  contents,
-  setContents,
-  index,
-}: Props) => {
-  const [preview, setPreview] = useState<string>();
-  const [titleValue, titleHandler, titleReset] = useInput("");
-  const [contentValue, contentHandler, contentReset] = useInput("");
-  const [categoryValue, setCategoryValue] = useState("");
-
-  useEffect(() => {
-    setContents(
-      contents.map((item, idx) =>
-        index === idx
-          ? {
-              ...item,
-              name: titleValue,
-              content: contentValue,
-              category: categoryValue,
-            }
-          : item
-      )
-    );
-  }, [titleValue, contentValue, categoryValue]);
-
-  const uploadImage = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const imageFile = e.target.files;
-    if (imageFile && imageFile[0]) {
-      const url = URL.createObjectURL(imageFile[0]);
-
-      setPreview(url);
-    }
-
-    imageFile && setImages([...images, imageFile[0]]);
-  };
-```
-
 
 #### CollectionForm.tsx
 
@@ -261,6 +211,7 @@ const CollectionPage = () => {
 ```
 
 - 또한 itemId는 **itemNumber**라는 상태를 이용해서 상품 추가 버튼을 누를 때마다 itemNumber가 1씩 증가하여 itemId에 부여되도록 하였습니다.
+- setContents 부분은 initialValue와 itemNumber를 적절하게 변경하면 코드량을 줄일 수 있을 것 같아서 
 
 #### CollectionForm.tsx
 
@@ -310,7 +261,7 @@ const useInput = <T>(initialValue: T): UseInputProps<T> => {
 export default useInput;
 ```
 
-- 그리고 useInput에서 사용하지 않는 reset 함수 또한 삭제해주었습니다.
+- 그리고 CollectionForm 컴포넌트에서 사용하지 않는 useInput의 reset 함수를 optional로 변경하고 import시에 빼주었습니다.
 
 #### CollectionForm.tsx
 
@@ -335,7 +286,7 @@ export default useInput;
   }, [titleValue, contentValue, categoryValue]);
 ```
 
-- 기존에 props로 넘겨받은 index가 아니라 **itemNumber** 와 **itemId** 를 비교해서 값을 변경합니다. 인덱스가 변화해도 안정적으로 원하는 컴포넌트의 값만 변경할 수 있게 되었습니다.
+- 기존에 props로 넘겨받은 index가 아니라 **itemNumber** 와 **itemId** 를 비교해서 값을 변경합니다. 인덱스가 변화해도 안정적으로 원하는 컴포넌트의 값만 변경할 수 있게 되었네요!
 
 
 ## 반응형 적용하여 완성된 페이지
