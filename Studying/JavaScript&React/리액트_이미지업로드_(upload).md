@@ -211,7 +211,7 @@ const CollectionPage = () => {
 ```
 
 - 또한 itemId는 **itemNumber**라는 상태를 이용해서 상품 추가 버튼을 누를 때마다 itemNumber가 1씩 증가하여 itemId에 부여되도록 하였습니다.
-- setContents 부분은 initialValue와 itemNumber를 적절하게 변경하면 코드량을 줄일 수 있을 것 같아서 
+- setContents 부분은 initialValue와 itemNumber를 적절하게 변경하면 코드량을 줄일 수 있을 것 같아서 리팩토링을 고민중입니다 ㅠㅠ
 
 #### CollectionForm.tsx
 
