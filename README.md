@@ -13,7 +13,9 @@
 - [\[자바\] 제네릭(Generics)](https://github.com/g4dalcom/dev_vault/blob/main/Studying/Java%26Spring/%EC%9E%90%EB%B0%94_%EC%A0%9C%EB%84%A4%EB%A6%AD(Generics).md)
 - [\[자바\] 업캐스팅 & 다운캐스팅 이해하기](https://github.com/g4dalcom/dev_vault/blob/main/Studying/Java&Spring/%EC%9E%90%EB%B0%94_%EC%97%85%EC%BA%90%EC%8A%A4%ED%8C%85_%EB%8B%A4%EC%9A%B4%EC%BA%90%EC%8A%A4%ED%8C%85.md)
 - [(리액트) 커스텀 셀렉트 박스(custom select-box)](Studying/JavaScript&React/리액트_커스텀_셀렉트박스(select_box).md)
-
+- [(리액트) 이미지 업로드 구현](https://github.com/g4dalcom/dev_vault/blob/main/Studying/JavaScript%26React/%EB%A6%AC%EC%95%A1%ED%8A%B8_%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%97%85%EB%A1%9C%EB%93%9C_(upload).md)
+- [(Next.js) 페이지네이션 구현해보기](https://github.com/g4dalcom/dev_vault/blob/main/Studying/JavaScript%26React/Next.js_%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98(Pagination).md)
+- [(Next.js) 무한스크롤 구현해보기(feat. Intersection observer)](https://github.com/g4dalcom/dev_vault/blob/main/Studying/JavaScript%26React/Next.js_%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4(Infinite_scroll)_IntersectionObserver.md)
 
 ### 🔎 Algorithm
 
@@ -115,6 +117,7 @@
 	- [(리액트) 경과 시간(날짜) 표시하기 & Intl API 겉핥기](Studying/JavaScript&React/리액트_경과시간표시_IntlAPI.md)
 	- [(리액트) 이미지 업로드 & 컨텐츠와 이미지 하나의 객체로 관리하기](Studying/JavaScript&React/리액트_이미지업로드_(upload).md)
 	- [(Next.js) 페이지네이션(Pagination) 구현해보기](Next.js_페이지네이션(Pagination).md)
+	- [(Next.js) 무한스크롤(Infinite Scroll) 구현해보기(feat. Intersection observer)](Next.js_무한스크롤(Infinite_scroll)_IntersectionObserver.md)
 
 
 - ### TypeScript
