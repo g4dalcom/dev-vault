@@ -4,10 +4,6 @@
 
 - [\[알고리즘\] 단어 수학(백준1399번), 골드4, 그리디](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C4)/%EB%8B%A8%EC%96%B4%20%EC%88%98%ED%95%99(%EB%B0%B1%EC%A4%801339%EB%B2%88)_%EA%B3%A8%EB%93%9C4_%EA%B7%B8%EB%A6%AC%EB%94%94(greedy).md)
 - [\[알고리즘\] 특정한 최단 경로(백준1504번), 골드4, 다익스트라](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C4)/%ED%8A%B9%EC%A0%95%ED%95%9C%20%EC%B5%9C%EB%8B%A8%20%EA%B2%BD%EB%A1%9C(%EB%B0%B1%EC%A4%801504%EB%B2%88)_%EA%B3%A8%EB%93%9C4_%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC(dijkstra).md)
-- [\[자바\] 배열(Array) 다루기](Studying/Java&Spring/자바_배열(Array)_다루기.md)
-- [\[자바스크립트\] 비동기 통신 & 프로미스(Promise)](Studying/JavaScript&React/자바스크립트_비동기통신_Promise.md)
-- [\[리액트\] 리액트 리덕스(Redux)](Studying/JavaScript&React/리액트_리덕스(redux).md)
-- [(자바스크립트) 비동기 통신 & Async/Await](Studying/JavaScript&React/자바스크립트_비동기통신_Async_Await.md)
 - [\[알고리즘\] 텀 프로젝트(백준9466번), 골드3, 그래프 탐색, dfs](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C3)/%ED%85%80%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8(%EB%B0%B1%EC%A4%809466%EB%B2%88)_%EA%B3%A8%EB%93%9C3_%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89%2C%20dfs.md)
 - [\[알고리즘\] 가장 긴 증가하는 부분 수열2, 골드2, 이분 탐색](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C2)/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B4%202(%EB%B0%B1%EC%A4%8012015%EB%B2%88)_%EA%B3%A8%EB%93%9C2_%EC%9D%B4%EB%B6%84%20%ED%83%90%EC%83%89%2C%20%EC%9D%B4%EC%A7%84%20%ED%83%90%EC%83%89%2C%20binary%20search.md)
 - [\[자바\] 제네릭(Generics)](https://github.com/g4dalcom/dev_vault/blob/main/Studying/Java%26Spring/%EC%9E%90%EB%B0%94_%EC%A0%9C%EB%84%A4%EB%A6%AD(Generics).md)
