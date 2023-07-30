@@ -187,6 +187,109 @@ const SelectBox = ({ options, setOption }: Props) => {
 - 이 로직의 문제점은 정확히 입력받아야 하는 문자열이 정해져있다는 것입니다. 조회수순이 아니라 조회수높은순 혹은 최신순 대신 최신으로 입력이 오면 정확한 값을 반환받을 수 없습니다.
 - 또 한가지는 정렬 옵션이 추가될 때마다 case 또한 추가로 입력해주어야 한다는 것입니다.
 
+### 리팩토링(2023-07-29)
+
+```typescript
+if (usage === "정렬") {
+      switch (current) {
+        case "최신순":
+          setOption("newest");
+          break;
+        case "오래된순":
+          setOption("oldest");
+          break;
+        case "좋아요순":
+          setOption("mostlike");
+          break;
+        case "조회수순":
+          setOption("mostview");
+          break;
+        case "가격낮은순":
+          setOption("priceasc");
+          break;
+        case "가격높은순":
+          setOption("pricedesc");
+          break;
+      }
+    } else if (usage === "상태") {
+      switch (current) {
+        case "판매완료":
+          setOption("productst");
+          break;
+        case "판매중":
+          setOption("productsf");
+          break;
+        case "등록대기":
+          setOption("productwait");
+          break;
+        case "등록거절":
+          setOption("productdeny");
+          break;
+      }
+    } else {
+      setOption(current);
+    }
+
+```
+
+- 기존에 **정렬**용으로만 사용하던 셀렉트 박스를 **상태**와 **카테고리**용으로도 사용하게 되면서 위 로직이 더 길어지고 가독성이 안 좋아지게 되었습니다.
+
+```typescript
+interface Props {
+  usage: "정렬" | "카테고리" | "상태";
+  options: string[];
+  setOption: React.Dispatch<React.SetStateAction<string>>;
+}
+```
+
+- 입력받는 props도 usage라는 옵션이 추가되었습니다.
+- 사실 **정렬**과 **상태**는 굳이 용도를 구분할 필요가 없이 기존 switch문에 추가를 해주어도 상관은 없습니다.
+- 이것은 공통되는 부분으로 묶어줄 수 있다는 이야기가 될 수 있죠!
+- 따라서 **입력받는 문자열**과 **대체되어야 하는 문자열** 두 가지의 키를 갖는 객체로 관리할 수 있을 거라고 생각하였습니다.
+
+```typescript
+  const replaceValue = {
+    정렬: [
+      { view: "최신순", replace: "newest" },
+      { view: "오래된순", replace: "oldest" },
+      { view: "좋아요순", replace: "mostlike" },
+      { view: "조회수순", replace: "mostview" },
+      { view: "가격낮은순", replace: "priceasc" },
+      { view: "가격높은순", replace: "pricedesc" },
+    ],
+    상태: [
+      { view: "판매완료", replace: "productst" },
+      { view: "판매중", replace: "productsf" },
+      { view: "등록대기", replace: "productwait" },
+      { view: "등록거절", replace: "productdeny" },
+    ],
+    카테고리: [],
+  };
+```
+
+- 카테고리의 경우 빈 배열로 둔 이유는 사용할 때 정렬이나 상태처럼 문자열이 변환되어야 하는 경우와 구분하기 위함입니다.
+
+```typescript
+  const handleSelectValue = (e: any) => {
+    const current = e.target.getAttribute("value");
+    setViewValue(current);
+
+    try {
+      if (replaceValue[usage].length > 0) {
+        const temp = replaceValue[usage].filter(
+          option => option.view === current
+        );
+        setOption(temp[0].replace);
+      } else setOption(current);
+    } catch (e) {
+      console.error("올바른 옵션인지 확인해주세요", e);
+    }
+  };
+```
+
+- switch문으로 지저분하게 있던 로직은 위와 같이 리팩토링할 수 있었습니다.
+- 카테고리의 경우는 length === 0 이기 때문에 입력받은 문자열 그대로 setOption을 하게 됩니다.
+- 그 외 경우에는 current값과 같은 view를 가지는 객체의 replace값을 setOption하게 되는 것이죠!
 
 ### 사용 방법
 
