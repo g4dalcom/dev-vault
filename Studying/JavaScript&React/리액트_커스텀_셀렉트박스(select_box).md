@@ -270,7 +270,7 @@ interface Props {
 - 카테고리의 경우 빈 배열로 둔 이유는 사용할 때 정렬이나 상태처럼 문자열이 변환되어야 하는 경우와 구분하기 위함입니다.
 
 ```typescript
-  const handleSelectValue = (e: any) => {
+  const handleSelectValue = (e: BaseSyntheticEvent) => {
     const current = e.target.getAttribute("value");
     setViewValue(current);
 
