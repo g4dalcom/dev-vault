@@ -39,11 +39,6 @@
 - [프로그래머스(레벨1)](/Algorithm/프로그래머스(레벨1))
 
 
-### 🔎 Project
-
-- [My-agora-states(질문 게시판 만들기)](/Studying/Project/My-Agora-States.md)
-
-
 ### 🔎 Learned
 
 - ### [CS DIARY](/Studying/CS_DIARY)
@@ -52,24 +47,10 @@
 	- [SQL 문제풀이](/Studying/SQLD/프로그래머스)
 
 - ### Computer Science
-	- [객체지향프로그래밍](/Studying/CS/객체지향프로그래밍.md)
-	- [자바가상머신(JVM)](/Studying/CS/자바가상머신(JVM).md)
-	- [쿠키와 세션](/Studying/CS/쿠키와_세션(Cookie&Session).md)
-	- [IoC와 DI & Bean](/Studying/CS/IoC(Inversion_of_Control)와_DI(Dependency_Injection)_&_Bean.md)
-	- [JPA](/Studying/CS/JPA.md)
-	- [JWT 토큰](/Studying/CS/JWT.md)
-	- [MVC 패턴](/Studying/CS/MVC패턴.md)
-	- [restAPI에서 PUT & PATCH](/Studying/CS/restAPI에서_PUT_PATCH.md)
-	- [SSR과 CSR 비교](/Studying/CS/SSR_CSR.md)
-	- [TDD(Test-Driven_Development)](/Studying/CS/TDD(Test-Driven_Development).md)
-	- [웹에서의 인증과 인가](/Studying/CS/인증_인가.md)
-	- [CORS](/Studying/CS/CORS.md)
-	- [Dispatcher-Sevlet](/Studying/CS/Dispatcher-Servlet.md)
-	- [자료구조 - 기본](/Studying/CS/자료구조_기본.md)
-	- [자료구조 - Array와 Linked List](/Studying/CS/자료구조_Array_Linked_List.md)
-	- [자료구조 - Stack and Queue](/Studying/CS/자료구조_Stack_&_Queue.md)
-	- [DP - Dynamic Programming](/Studying/CS/DP_DynamicProgramming.md)
-	- [자료구조 - Deque(덱_데크)](/Studying/CS/Deque(덱_데크).md)
+	- [네트워크](Studying/CS/네트워크)
+	- [운영체제](Studying/CS/운영체제)
+	- [자료구조](Studying/CS/자료구조)
+	- [SW엔지니어링](Studying/CS/SW엔지니어링)
 
 
 - ### Java & Spring
