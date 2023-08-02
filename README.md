@@ -94,6 +94,7 @@
 	- [(리액트) 경과 시간(날짜) 표시하기 & Intl API 겉핥기](Studying/JavaScript&React/리액트_경과시간표시_IntlAPI.md)
 	- [(리액트) 이미지 업로드 & 컨텐츠와 이미지 하나의 객체로 관리하기](Studying/JavaScript&React/리액트_이미지업로드_(upload).md)
 	- [(리액트) 사이드바 리팩토링 해보기](Studying/JavaScript&React/리액트_사이드바_리팩토링.md)
+	- [(리액트) 렌더링 최적화](Studying/JavaScript&React/리액트_렌더링최적화.md)
 	- [(Next.js) 페이지네이션(Pagination) 구현해보기](Next.js_페이지네이션(Pagination).md)
 	- [(Next.js) 무한스크롤(Infinite Scroll) 구현해보기(feat. Intersection observer)](Next.js_무한스크롤(Infinite_scroll)_IntersectionObserver.md)
 
