@@ -33,12 +33,6 @@ public class Animal {
 - 그러나 개를 더 좋아하는 개발자가 cat과 dog의 순서를 바꾸었다고 가정한다면, IDE가 제공하는 리팩토링이 동작하지 않고 lombok도 변화를 알아차리지 못한다.
 
 ```java
-@AllArgsConstructor
-public class Animal {
-    private String dog;
-    private String cat;
-}
-
 Animal animal = New Animal("멍멍", "야옹");
 ```
 
@@ -48,13 +42,13 @@ Animal animal = New Animal("멍멍", "야옹");
 
 ```java
 public class Animal {
-    private String dog;
     private String cat;
+    private String dog;
 
 	@Builder
-	private Animal(String dog, String cat) {
-		this.dog = dog;
+	private Animal(String cat, String dog) {
 		this.cat = cat;
+		this.dog = dog;
 	}
 }
 ```
