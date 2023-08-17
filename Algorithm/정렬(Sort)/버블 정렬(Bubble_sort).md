@@ -27,7 +27,7 @@ $$(n-1) + (n-2) + ... + 2 + 1 = (n-1) \times \frac{n}{2} = \frac{n(n-1)}{2}$$
 void BubbleSort(int[] arr) {
 	int temp = 0;
 	for (int i = 0; i < arr.length; i++) {
-		for (int j = 1; j < arr.length-1; j++) {
+		for (int j = 1; j < arr.length - i; j++) {
 			if (arr[j-1] > arr[j]) {
 				temp = arr[j-1];
 				arr[j-1] = arr[j];
