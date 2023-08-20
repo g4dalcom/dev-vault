@@ -51,6 +51,7 @@
 	- [운영체제](Studying/CS/운영체제)
 	- [자료구조](Studying/CS/자료구조)
 	- [SW엔지니어링](Studying/CS/SW엔지니어링)
+	- [면접 질문 정리](Studying/CS/면접질문정리)
 
 
 - ### Java & Spring
