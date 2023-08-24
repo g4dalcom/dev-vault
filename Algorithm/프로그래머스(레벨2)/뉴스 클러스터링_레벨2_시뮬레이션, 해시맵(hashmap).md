@@ -83,7 +83,6 @@ public void partition(String str, HashMap<String, Integer> map) {
 
 // 문자열로만 이루어졌는지 체크
 public boolean check(String str) {
-	str = str.toLowerCase();
 	for (int i = 0; i < str.length(); i++) {
 		if (str.charAt(i) < 97 || str.charAt(i) > 122) return false;
 	}
@@ -206,7 +205,6 @@ class Solution {
     }
     
     public boolean check(String str) {
-        str = str.toLowerCase();
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) < 97 || str.charAt(i) > 122) return false;
         }
