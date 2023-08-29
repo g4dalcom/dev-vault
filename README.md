@@ -2,16 +2,13 @@
 
 ### ⭐ 최근 업데이트
 
-- [\[알고리즘\] 단어 수학(백준1399번), 골드4, 그리디](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C4)/%EB%8B%A8%EC%96%B4%20%EC%88%98%ED%95%99(%EB%B0%B1%EC%A4%801339%EB%B2%88)_%EA%B3%A8%EB%93%9C4_%EA%B7%B8%EB%A6%AC%EB%94%94(greedy).md)
-- [\[알고리즘\] 특정한 최단 경로(백준1504번), 골드4, 다익스트라](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C4)/%ED%8A%B9%EC%A0%95%ED%95%9C%20%EC%B5%9C%EB%8B%A8%20%EA%B2%BD%EB%A1%9C(%EB%B0%B1%EC%A4%801504%EB%B2%88)_%EA%B3%A8%EB%93%9C4_%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC(dijkstra).md)
-- [\[알고리즘\] 텀 프로젝트(백준9466번), 골드3, 그래프 탐색, dfs](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C3)/%ED%85%80%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8(%EB%B0%B1%EC%A4%809466%EB%B2%88)_%EA%B3%A8%EB%93%9C3_%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89%2C%20dfs.md)
-- [\[알고리즘\] 가장 긴 증가하는 부분 수열2, 골드2, 이분 탐색](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C2)/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B4%202(%EB%B0%B1%EC%A4%8012015%EB%B2%88)_%EA%B3%A8%EB%93%9C2_%EC%9D%B4%EB%B6%84%20%ED%83%90%EC%83%89%2C%20%EC%9D%B4%EC%A7%84%20%ED%83%90%EC%83%89%2C%20binary%20search.md)
 - [\[자바\] 제네릭(Generics)](https://github.com/g4dalcom/dev_vault/blob/main/Studying/Java%26Spring/%EC%9E%90%EB%B0%94_%EC%A0%9C%EB%84%A4%EB%A6%AD(Generics).md)
 - [\[자바\] 업캐스팅 & 다운캐스팅 이해하기](https://github.com/g4dalcom/dev_vault/blob/main/Studying/Java&Spring/%EC%9E%90%EB%B0%94_%EC%97%85%EC%BA%90%EC%8A%A4%ED%8C%85_%EB%8B%A4%EC%9A%B4%EC%BA%90%EC%8A%A4%ED%8C%85.md)
 - [(리액트) 커스텀 셀렉트 박스(custom select-box)](Studying/JavaScript&React/리액트_커스텀_셀렉트박스(select_box).md)
 - [(리액트) 이미지 업로드 구현](https://github.com/g4dalcom/dev_vault/blob/main/Studying/JavaScript%26React/%EB%A6%AC%EC%95%A1%ED%8A%B8_%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%97%85%EB%A1%9C%EB%93%9C_(upload).md)
 - [(Next.js) 페이지네이션 구현해보기](https://github.com/g4dalcom/dev_vault/blob/main/Studying/JavaScript%26React/Next.js_%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98(Pagination).md)
 - [(Next.js) 무한스크롤 구현해보기(feat. Intersection observer)](https://github.com/g4dalcom/dev_vault/blob/main/Studying/JavaScript%26React/Next.js_%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4(Infinite_scroll)_IntersectionObserver.md)
+- [\[운영체제\] 프로세스와 스레드](https://github.com/g4dalcom/dev_vault/blob/main/Studying/CS/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4(Process)%EC%99%80%20%20%EC%8A%A4%EB%A0%88%EB%93%9C(Thread).md)
 
 ### 🔎 Algorithm
 
