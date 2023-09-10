@@ -101,6 +101,7 @@
 
 - ### TypeScript
 	- [(타입스크립트) 타입스크립트의 인터페이스(Interface) 뿌시기](Studying/TypeScript/타입스크립트_인터페이스(Interface).md)
+	- [(타입스크립트) 타입스크립트에서 인덱스 시그니쳐(Index Signature) 사용하기](Studying/TypeScript/타입스크립트_인덱스시그니쳐(index_signature).md)
 
 - ### Python
 	- [기본자료형-문자열(String)](Studying/Python/파이썬_기본자료형_문자열(String).md)
