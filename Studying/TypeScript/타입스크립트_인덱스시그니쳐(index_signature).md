@@ -129,3 +129,10 @@ const sizeStyles: { [key: string]: { [subKey: string]: string } } = {
 ```
 
 - 위와 같은 중첩된 구조도 마찬가지겠죠?!
+
+---
+### 참고 자료
+
+- [인덱스 시그니처(Index Signature) 사용 방법](https://developer-talk.tistory.com/297)
+- [TypeScript Deep Dive](https://radlohead.gitbook.io/typescript-deep-dive/type-system/index-signatures)
+- [TypeScript에서 string key로 객체에 접근하기](https://soopdop.github.io/2020/12/01/index-signatures-in-typescript/)
