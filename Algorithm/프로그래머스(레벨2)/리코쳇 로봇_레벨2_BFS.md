@@ -66,15 +66,13 @@ D....D.
 
 ### 💡 풀이
 
+- 우선 최단거리를 구하는 문제이기 때문에 dfs보다 bfs가 적절합니다.
+- 최단거리의 경우 memoization을 이용한다고 해도 dfs는 시간 초과가 날 가능성이 높기 때문입니다.
+- 그리고 처음 방문한 곳은 무조건 갱신시켜주어야 하므로 dp배열을 Integer.MAX_VALUE로 초기화해두었습니다.
+- bfs의 경우 방문하는 순서가 곧 최단거리가 되기 때문에 방문한 곳은 true로 설정하여 다시 방문하지 않도록 하였습니다.
+
 
 ### 🔍 정답
-
-```java
-
-```
-
-
-### ❌ 시행착오
 
 ```java
 import java.util.*;
@@ -84,10 +82,13 @@ class Solution {
     static int[] dy = {1, -1, 0, 0};
     static char[][] ricochet;
     static int[][] dp;
+    static boolean[][] visit;
     
     public int solution(String[] board) {
         ricochet = new char[board.length][board[0].length()];
         dp = new int[board.length][board[0].length()];
+        visit = new boolean[board.length][board[0].length()];
+        
         for (int i = 0; i < dp.length; i++) {
             Arrays.fill(dp[i], Integer.MAX_VALUE);
         }
@@ -109,28 +110,35 @@ class Solution {
                 }
             }
         }
-        moving(new Node(startX, startY), 0);
+        moving(new Node(startX, startY));
         
         return dp[endX][endY] == Integer.MAX_VALUE ? -1 : dp[endX][endY];
     }
     
-    public void moving(Node node, int count) {        
-        if (dp[node.x][node.y] <= count) return;
-        else dp[node.x][node.y] = count;
+    public void moving(Node node) {
+        Queue<Node> q = new LinkedList<>();
+        dp[node.x][node.y] = 0;
+        q.offer(node);
+        visit[node.x][node.y] = true;
         
-        if (ricochet[node.x][node.x] == 'G') return;
-        
-        for (int i = 0; i < 4; i++) {
-            boolean flag = false;
-            int cx = node.x;
-            int cy = node.y;
+        while (!q.isEmpty()) {
+            Node current = q.poll();
             
-            while (isPossibleMove(cx + dx[i], cy + dy[i])) {
-                flag = true;
-                cx += dx[i];
-                cy += dy[i];
-            }  
-            if (flag) moving(new Node(cx, cy), count + 1);
+            for (int i = 0; i < 4; i++) {
+                int cx = current.x;
+                int cy = current.y;
+                
+                while (isPossibleMove(cx + dx[i], cy + dy[i])) {
+                    cx += dx[i];
+                    cy += dy[i];
+                }
+                
+                if (!visit[cx][cy]) {
+                    dp[cx][cy] = dp[current.x][current.y] + 1;
+                    visit[cx][cy] = true;
+                    q.offer(new Node(cx, cy));
+                }
+            }
         }
     }
     
