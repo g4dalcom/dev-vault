@@ -95,8 +95,9 @@
 	- [(리액트) 사이드바 리팩토링 해보기](Studying/JavaScript&React/리액트_사이드바_리팩토링.md)
 	- [(리액트) 렌더링 최적화](Studying/JavaScript&React/리액트_렌더링최적화.md)
 	- [(리액트) Debounce, Throttle](Studying/JavaScript&React/리액트_Debounce_Throttle.md)
-	- [(Next.js) 페이지네이션(Pagination) 구현해보기](Next.js_페이지네이션(Pagination).md)
-	- [(Next.js) 무한스크롤(Infinite Scroll) 구현해보기(feat. Intersection observer)](Next.js_무한스크롤(Infinite_scroll)_IntersectionObserver.md)
+	- [(Next.js) 페이지네이션(Pagination) 구현해보기](Studying/JavaScript&React/Next.js_페이지네이션(Pagination).md)
+	- [(Next.js) 무한스크롤(Infinite Scroll) 구현해보기(feat. Intersection observer)](Studying/JavaScript&React/Next.js_무한스크롤(Infinite_scroll)_IntersectionObserver.md)
+	- [(React-query) cache & stale](Studying/JavaScript&React/리액트쿼리_cache_stale.md)
 
 
 - ### TypeScript
