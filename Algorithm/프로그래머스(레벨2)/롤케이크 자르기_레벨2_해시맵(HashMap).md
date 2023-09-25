@@ -1,0 +1,141 @@
+# [문제링크](https://school.programmers.co.kr/learn/courses/30/lessons/132265)
+
+## 📝 문제
+
+철수는 롤케이크를 두 조각으로 잘라서 동생과 한 조각씩 나눠 먹으려고 합니다. 이 롤케이크에는 여러가지 토핑들이 일렬로 올려져 있습니다. 철수와 동생은 롤케이크를 공평하게 나눠먹으려 하는데, 그들은 롤케이크의 크기보다 롤케이크 위에 올려진 토핑들의 종류에 더 관심이 많습니다. 그래서 잘린 조각들의 크기와 올려진 토핑의 개수에 상관없이 각 조각에 동일한 가짓수의 토핑이 올라가면 공평하게 롤케이크가 나누어진 것으로 생각합니다.
+
+예를 들어, 롤케이크에 4가지 종류의 토핑이 올려져 있다고 합시다. 토핑들을 1, 2, 3, 4와 같이 번호로 표시했을 때, 케이크 위에 토핑들이 [1, 2, 1, 3, 1, 4, 1, 2] 순서로 올려져 있습니다. 만약 세 번째 토핑(1)과 네 번째 토핑(3) 사이를 자르면 롤케이크의 토핑은 [1, 2, 1], [3, 1, 4, 1, 2]로 나뉘게 됩니다. 철수가 [1, 2, 1]이 놓인 조각을, 동생이 [3, 1, 4, 1, 2]가 놓인 조각을 먹게 되면 철수는 두 가지 토핑(1, 2)을 맛볼 수 있지만, 동생은 네 가지 토핑(1, 2, 3, 4)을 맛볼 수 있으므로, 이는 공평하게 나누어진 것이 아닙니다. 만약 롤케이크의 네 번째 토핑(3)과 다섯 번째 토핑(1) 사이를 자르면 [1, 2, 1, 3], [1, 4, 1, 2]로 나뉘게 됩니다. 이 경우 철수는 세 가지 토핑(1, 2, 3)을, 동생도 세 가지 토핑(1, 2, 4)을 맛볼 수 있으므로, 이는 공평하게 나누어진 것입니다. 공평하게 롤케이크를 자르는 방법은 여러가지 일 수 있습니다. 위의 롤케이크를 [1, 2, 1, 3, 1], [4, 1, 2]으로 잘라도 공평하게 나뉩니다. 어떤 경우에는 롤케이크를 공평하게 나누지 못할 수도 있습니다.
+
+롤케이크에 올려진 토핑들의 번호를 저장한 정수 배열 `topping`이 매개변수로 주어질 때, 롤케이크를 공평하게 자르는 방법의 수를 return 하도록 solution 함수를 완성해주세요.
+
+---
+
+##### 제한사항
+
+- 1 ≤ `topping`의 길이 ≤ 1,000,000
+    - 1 ≤ `topping`의 원소 ≤ 10,000
+
+---
+
+##### 입출력 예
+
+|topping|result|
+|---|---|
+|[1, 2, 1, 3, 1, 4, 1, 2]|2|
+|[1, 2, 3, 1, 4]|0|
+
+---
+
+##### 입출력 예 설명
+
+**입출력 예 #1**
+
+- 롤케이크를 [1, 2, 1, 3], [1, 4, 1, 2] 또는 [1, 2, 1, 3, 1], [4, 1, 2]와 같이 자르면 철수와 동생은 각각 세 가지 토핑을 맛볼 수 있습니다. 이 경우 공평하게 롤케이크를 나누는 방법은 위의 두 가지만 존재합니다.
+
+**입출력 예 #2**
+
+- 롤케이크를 공평하게 나눌 수 없습니다.
+
+---
+
+### 💡 풀이
+
+- 입력 배열의 크기가 100만이기 때문에 당연하게도 Stream이나 Set을 계속 새로 생성하면서 비교하는 것은 시간 초과가 납니다.
+- 따라서 한 번만 생성한 후 사용할 수 있는 게 무엇일까 고민하다가 HashMap을 사용하기로 하였습니다.
+- 형(older)의 경우는 토핑이 처음에 1개에서 점점 늘어가는 구조이고 동생(younger)의 경우는 모든 요소를 가지고 있다가 앞 인덱스부터 하나씩 제외되는 구조로 생각하고 구현하였습니다.
+- 처음에 younger 맵에 모든 요소를 넣어주되 중복요소를 제거하기 위해 getOrDefault를 활용해서 개수를 카운팅 해주었습니다.
+- 그리고 제외해야 하는 요소의 개수의 1보다 크다면 -1을 해주고 1 이하라면 토핑을 삭제하도록 구현하고 map의 사이즈를 비교해주었습니다.
+
+### 🔍 정답
+
+```java
+import java.util.*;
+
+class Solution {
+    public int solution(int[] topping) {
+        int answer = 0;
+        HashMap<Integer, Integer> older = new HashMap<>();
+        HashMap<Integer, Integer> younger = new HashMap<>();
+        for (int t : topping) {
+            younger.put(t, younger.getOrDefault(t, 0) + 1);
+        }
+        
+        for (int i = 0; i < topping.length-1; i++) {
+            int current = topping[i];
+            older.put(current, older.getOrDefault(current, 0) + 1);
+            
+            if (younger.get(current) > 1) {
+                younger.replace(current, younger.get(current) - 1);
+            } else {
+                younger.remove(current);
+            }  
+            
+            if (older.size() == younger.size()) answer++;
+        }
+        
+        return answer;
+    }
+}
+```
+
+
+### ❌ 시행착오(Stream)
+
+```java
+import java.util.*;
+import java.util.stream.Collectors;
+
+class Solution {
+    public int solution(int[] topping) {
+        int answer = 0;
+        
+        List<Integer> toppingList = Arrays.stream(topping).boxed().collect(Collectors.toList());
+    
+        for (int i = 1; i < topping.length; i++) {
+            long older = toppingList.stream().limit(i).distinct().count();
+            long younger = toppingList.stream().skip(i).distinct().count();
+            
+            if (older == younger) answer++;
+        }
+        
+        return answer;
+    }
+}
+```
+
+
+### ❌ 시행착오(Set)
+
+```java
+import java.util.*;
+
+class Solution {
+    public int solution(int[] topping) {
+        int answer = 0;
+        
+        for (int i = 1; i < topping.length; i++) {
+            Set<Integer> older = new HashSet<>();
+            Set<Integer> younger = new HashSet<>();
+            
+            olderCount(i, older, topping);
+            youngerCount(i, younger, topping);
+            
+            if (older.size() == younger.size()) answer++;
+        }
+        
+        return answer;
+    }
+    
+    public void olderCount(int x, Set<Integer> older, int[] topping) {
+        for (int i = 0; i < x; i++) {
+            older.add(topping[i]);
+        }
+    }
+    
+    public void youngerCount(int x, Set<Integer> younger, int[] topping) {
+        for (int i = x; i < topping.length; i++) {
+            younger.add(topping[i]);
+        }
+    }
+}
+```
