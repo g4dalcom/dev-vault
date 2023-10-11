@@ -29,44 +29,43 @@
 
 ```java
 public class MergeSorter {
-
     public static void mergeSort(int[] arr) {
-        sort(arr, 0, arr.length);
+        int[] temp = new int[arr.length];
+	    sort(arr, temp, 0, arr.length-1);
     }
 
-    private static void sort(int[] arr, int low, int high) {
-        if (high - low < 2) {
-            return;
-        }
-
-        int mid = (low + high) / 2;
-        sort(arr, 0, mid);
-        sort(arr, mid, high);
-        merge(arr, low, mid, high);
+    private static void sort(int[] arr, int[] temp, int lo, int hi) {
+        if (lo >= hi) return;
+        
+        int mid = (lo + hi) / 2;
+        sort(arr, temp, lo, mid);
+        sort(arr, temp, mid+1, hi);
+        merge(arr, temp, lo, mid, hi)
     }
 
-    private static void merge(int[] arr, int low, int mid, int high) {
-        int[] temp = new int[high - low];
-        int t = 0, l = low, h = mid;
-
-        while (l < mid && h < high) {
-            if (arr[l] < arr[h]) {
-                temp[t++] = arr[l++];
+    private static void merge(int[] arr, int[] temp, int lo, int mid, int hi) {
+        int l = lo;
+        int r = mid+1;
+        int index = lo;
+        
+        while (l <= mid && r <= hi) {
+            if (arr[l] <= arr[r]) {
+                temp[index++] = arr[l++];
             } else {
-                temp[t++] = arr[h++];
+                temp[index++] = arr[r++];
             }
         }
-
-        while (l < mid) {
-            temp[t++] = arr[l++];
+        
+        while (l <= mid) {
+            temp[index++] = arr[l++];
         }
-
-        while (h < high) {
-            temp[t++] = arr[h++];
+        
+        while (r <= hi) {
+            temp[index++] = arr[r++];
         }
-
-        for (int i = low; i < high; i++) {
-            arr[i] = temp[i - low];
+        
+        for (int i = lo; i <= hi; i++) {
+            arr[i] = temp[i];
         }
     }
 }
