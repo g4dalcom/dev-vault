@@ -74,6 +74,7 @@
 	- [(자바) 제네릭의 와일드카드 & 공변성](Studying/Java&Spring/자바_제네릭_와일드카드_공변.md)
 	- [(자바) Record](Studying/Java&Spring/자바_record.md)
 	- [(자바) 비트 연산자](Studying/Java&Spring/자바_비트연산자.md)
+	- [(자바) JUnit](Studying/Java&Spring/자바_JUnit.md)
 
 
 - ### JavaScript&React
