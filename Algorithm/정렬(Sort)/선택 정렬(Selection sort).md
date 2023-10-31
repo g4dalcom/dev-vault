@@ -31,8 +31,8 @@ public class Solution {
 					min_index = j;
 				}
 			}
+			swap(arr, min_index, i);
 		}
-		swap(arr, min_index, i);
 	}
 
 	public static void swap(int[] arr, int i, int j) {
