@@ -92,3 +92,11 @@
 - 전달된 전기적 신호는 이 계층에서 시작되어 다시 기계어로 번역되고 최종적으로 응용 계층에서 사용자가 볼 수 있는 데이터로 나타나게 됩니다.
 - **전송단위(PDU): 비트(0 또는 1)
 - **장비: 통신 케이블, 허브**
+
+
+### 참고 자료
+
+- [10분 테코톡 - 히히의 OSI 7 Layer](https://youtu.be/1pfTxp25MA8?si=-g7509fFo8w5c1zG)
+- [어라운드허브스튜디오 - OSI 7 계층](https://youtu.be/TBUaVzNkxFg?si=1pXpmIPSfYGv1HDN)
+- [무작정개발 - OSI 7 계층 (OSI 7 Layer)](https://backendcode.tistory.com/167)
+- [해시넷](http://wiki.hash.kr/index.php/OSI_7_%EA%B3%84%EC%B8%B5)
