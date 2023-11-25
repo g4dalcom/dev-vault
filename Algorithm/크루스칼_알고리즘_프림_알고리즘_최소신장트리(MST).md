@@ -1,8 +1,10 @@
-# 크루스칼 알고리즘(최소 신장 트리-MST)
+업데이트 예정 : [프림 알고리즘](https://velog.io/@chosj1526/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%94%84%EB%A6%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Prims-Algorithm)
+
+# 최소 신장 트리를 구현하는 알고리즘
 
 # 개념
 
-- 크루스칼 알고리즘은 그래프 내의 모든 정점들을 최소 비용으로 연결하기 위해 사용
+- 크루스칼 알고리즘과 프림 알고리즘은 그래프 내의 모든 정점들을 최소 비용으로 연결하기 위해 사용
 - 그래프 내의 모든 정점을 포함하고 사이클이 없는 연결 선을 그렸을 때 가중치의 합이 최소인 경우
 
 ## 신장트리(Spanning Tree)
@@ -18,7 +20,8 @@
 - 아래 그림은 1-2-4 간 사이클이 형성되었기 때문에 신장 트리가 아니다.
 - 따라서 **신장 트리의 간선의 개수는 정점-1개**가 된다.
 - 그리고 이러한 신장 트리 중 가중치의 합이 최소가 되는 것이 최소 신장 트리(Minimum Spanning Tree, MST)인 것이다!
-- 최소 신장 트리는 대표적으로 크루스칼 알고리즘으로 구현할 수 있다.
+- 최소 신장 트리는 대표적으로 크루스칼 알고리즘과 프림 알고리즘으로 구현할 수 있다.
+- 그래프내 간선이 많은 경우는 프림 알고리즘, 그렇지 않은 경우는 크루스칼 알고리즘이 유리하다고 한다.
 
 
 ## 크루스칼 알고리즘 흐름
@@ -45,6 +48,23 @@
 - 위의 경우 B와 D는 A라는 공통 부모를 가지고 있고 C와 D 또한 공통 부모를 가지고 있기 때문에 연결하지 않게 된다.
 
 
+## 프림 알고리즘 흐름
+
+- 크루스칼 알고리즘이 가중치를 기준으로 최소인 노드부터 그래프를 형성한다면,
+- 프림 알고리즘은 시작 노드를 기준으로 다른 정점들을 하나씩 추가해나가며 그래프를 확장해가는 형식이다.
+- 우선순위 큐를 활용한 최소힙을 통해 가장 작은 가중치의 간선을 하나씩 추가하고, 이미 추가된 간선은 건너뛰는 방식으로 구현하게 된다.
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F8kKQ6%2FbtsAWjoMzZi%2FMCng3t7xbtKsoGsjXWbH10%2Fimg.png)
+
+- 처음에는 모든 노드를 연결하지 않은 상태(visit = false) 로 두고 1번 노드부터 탐색을 시작한다.
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FWlJvx%2FbtsAQzApwdT%2FbgQ57yafiTCdU44U1o7W41%2Fimg.png)
+
+- 1번 노드에서 갈 수 있는 코스 중 가장 작은 가중치를 가지고 있는 2번을 연결하고
+- 2번에서 갈 수 있는 코스 중 가장 작은 가중치를 다시 연결하며 확장해나간다.
+- 4번은 가장 작은 가중치가 2로 1번으로 연결이 되어야 하지만 1번은 이미 방문한 노드이므로 건너뛰고 3번 노드와 연결이 되는 것이다.
+
+
 ### 관련 문제
 
-[링크](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C4)/%EC%B5%9C%EC%86%8C%20%EC%8A%A4%ED%8C%A8%EB%8B%9D%20%ED%8A%B8%EB%A6%AC(%EB%B0%B1%EC%A4%801197%EB%B2%88)_%EA%B3%A8%EB%93%9C4_%EC%8A%A4%ED%8C%A8%EB%8B%9D%2C%20spanning%20tree%2C%20%EC%8B%A0%EC%9E%A5%20%ED%8A%B8%EB%A6%AC%2C%20%EC%B5%9C%EC%86%8C%20%EC%8B%A0%EC%9E%A5%20%ED%8A%B8%EB%A6%AC%2C%20%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%2C%20MST.md)
+[크루스칼 알고리즘 풀이 링크](https://github.com/g4dalcom/dev_vault/blob/main/Algorithm/%EB%B0%B1%EC%A4%80(%EA%B3%A8%EB%93%9C4)/%EC%B5%9C%EC%86%8C%20%EC%8A%A4%ED%8C%A8%EB%8B%9D%20%ED%8A%B8%EB%A6%AC(%EB%B0%B1%EC%A4%801197%EB%B2%88)_%EA%B3%A8%EB%93%9C4_%EC%8A%A4%ED%8C%A8%EB%8B%9D%2C%20spanning%20tree%2C%20%EC%8B%A0%EC%9E%A5%20%ED%8A%B8%EB%A6%AC%2C%20%EC%B5%9C%EC%86%8C%20%EC%8B%A0%EC%9E%A5%20%ED%8A%B8%EB%A6%AC%2C%20%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%2C%20MST.md)
