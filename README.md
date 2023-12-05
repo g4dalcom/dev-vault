@@ -23,7 +23,7 @@
 - [투포인터(Two pointers) 알고리즘](/Algorithm/투포인터_알고리즘.md)
 - [크루스칼 알고리즘 & 프림 알고리즘](크루스칼_알고리즘_프림_알고리즘_최소신장트리(MST).md)
 - [인덱스 회전(나머지 연산)](/Algorithm/인덱스_회전(나머지_연산).md)
-- [LeetCode(Hard)]((/Algorithm/LeetCode(Hard))
+- [LeetCode]((/Algorithm/LeetCode)
 - [알고리즘 백준(골드2)](/Algorithm/백준(골드2))
 - [알고리즘 백준(골드3)](/Algorithm/백준(골드3))
 - [알고리즘 백준(골드4)](/Algorithm/백준(골드4))
