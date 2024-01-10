@@ -138,6 +138,7 @@
 	- [CSS 셀렉터](/Studying/Programming/CSS_Selector.md)
 	- [REST API(REST 성숙도 모델)](/Studying/Programming/REST_API.md)
 	- [프론트엔드에서의 UI/UX](/Studying/Programming/프론트엔드에서의_UIUX.md)
+	- [Nest.JS 구조 파악해보기](/Studying/Programming/Nest.js_practice_structure.md)
 
 
 
