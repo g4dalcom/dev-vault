@@ -112,6 +112,7 @@
 - ### Nest.JS
 	- [Nest.JS 기본 구조 파악해보기](Studying/Nest.JS/structure.md)
 	- [postgreSQL, typeORM 적용시켜보기](Studying/Nest.JS/postgreSQL_typeORM.md)
+	- [CRUD](Studying/Nest.JS/crud.md)
 
 
 - ### Python
