@@ -108,6 +108,12 @@
 	- [(타입스크립트) 타입스크립트의 인터페이스(Interface) 뿌시기](Studying/TypeScript/타입스크립트_인터페이스(Interface).md)
 	- [(타입스크립트) 타입스크립트에서 인덱스 시그니쳐(Index Signature) 사용하기](Studying/TypeScript/타입스크립트_인덱스시그니쳐(index_signature).md)
 
+
+- ### Nest.JS
+	- [Nest.JS 기본 구조 파악해보기](Studying/Nest.JS/structure.md)
+	- [postgreSQL, typeORM 적용시켜보기](Studying/Nest.JS/postgreSQL_typeORM.md)
+
+
 - ### Python
 	- [기본자료형-문자열(String)](Studying/Python/파이썬_기본자료형_문자열(String).md)
 	- [리스트를 문자열로 변환하기](Studying/Python/파이썬_리스트를_문자열로_변환하기.md)
@@ -138,8 +144,6 @@
 	- [CSS 셀렉터](/Studying/Programming/CSS_Selector.md)
 	- [REST API(REST 성숙도 모델)](/Studying/Programming/REST_API.md)
 	- [프론트엔드에서의 UI/UX](/Studying/Programming/프론트엔드에서의_UIUX.md)
-	- [Nest.JS 구조 파악해보기](/Studying/Programming/Nest.js_practice_structure.md)
-
 
 
 - ### Error Handling

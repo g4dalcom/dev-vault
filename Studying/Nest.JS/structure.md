@@ -84,7 +84,7 @@ export class AppModule {}
 - app.module은 가장 최초 진입점(root)의 컨트롤러와 서비스를 연결하고 있는 최상위 모듈로 보입니다.
 - Nest.js 에서의 모듈은 기능별로 구분된 집합 요소입니다. 가령 User 관련한 기능들(UserController, UserService, UserEntity)은 User라는 하나의 모듈(user.module) 안에서 관리되는 것이죠.
 - 따라서 하나의 프로그램에는 기본적으로 app.module 이라는 루트 모듈이 존재하고 이외에도 여러 모듈들이 존재할 수 있는 것입니다!
-- 스프링에서 **Dispatcher Servlet**이 모든 요청을 받아서 요청을 처리할 컨트롤러를 파악하고 해당 컨트롤러에게 요청을 넘기듯이 nest에서는 모듈이 이러한 비슷한 기능을 하는 것 같습니다.
+- 스프링에서 제어의 역전 개념이 구현된 스프링 빈과 nest의 모듈이 비슷한 개념이라고 느껴졌습니다. 스프링이 컴포넌트 스캔을 통해 스프링 빈을 파악하고 관리하듯이 nest는 정의된 모듈들과 요소들을 매핑하고 싱글톤으로 관리해주는 것 같네요!
 
 ### app.controller.ts
 
@@ -201,9 +201,9 @@ export class UserController {
 
 - user entity 를 생성하기 전에 컨트롤러와 서비스가 제대로 동작하는지 알아보기 위해 간단한 로직을 작성해보았습니다.
 - 우선 service 로직을 사용하기 위해 의존성을 주입해야 합니다. 스프링부트와 마찬가지로 생성자 주입이 가능합니다!
+- 참고로 @Controller 데코레이터에 정의되어 있는 'user'는 스프링에서 @RequestMapping('/user') 과 같은 역할을 합니다. 반복적으로 사용되는 경로를 접두사로 지정해두는 것이죠!
 - 이제 **/user** 라는 엔드포인트로 들어오면 get 요청을 날리게 되고 userService의 getAllUsers() 메소드를 실행시키며 getAllUsers() 는 단순하게 "옛다! users info" 를 반환합니다.
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F1WXWX%2FbtsC8YdTv6b%2FaneasOvEU0SXkYYjxVsLKk%2Fimg.png)
 
 - http://localhost:3000/user 로 접속하면 제대로 동작함을 확인할 수 있습니다!
-
