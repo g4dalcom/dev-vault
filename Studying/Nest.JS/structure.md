@@ -123,8 +123,18 @@ export class AppService {
 - 3000번 포트로 진입을 했을 때 나타났던 Hello World라는 문구가 바로 이곳에서 리턴이 됩니다.
 - 요약하면, **/** 경로로 get 요청이 들어오고 해당 요청을 처리할 AppController 가 AppService의 처리된 로직을 받아서 최종 반환한 것입니다!
 - 여기서 스프링부트와 다른 점은 @Service 어노테이션이 아니라 @Injectable() 이라는 데코레이터가 붙어있다는 점인데요! Injection 이라고 하면 스프링을 공부할 때 귀에 피가 나도록 듣는 DI(Dependency Injection)이 생각이 납니다. DI라는 것은 의존성을 주입한다는 것인데요 **injectable을 해석하면 주입가능한** 이므로 해당 모듈을 주입가능한 상태로 만들어주는 데코레이터라고 추측할 수 있습니다.
-- @Injectable() 데코레이터는 해당 클래스를 **실제로 주입해주는 것이 아니라** 주입가능한 상태로 만들어주기 때문에 사용하려면 주입을 해주어야 합니다.
-- 이 작업은 우리가 가장 처음에 살펴보았던 **app.module.ts** 파일의 **providers**에 넣음으로써 구현할 수가 있습니다.
+- @Injectable() 데코레이터에 대해서는 공식문서에 관련 설명이 있습니다.
+
+> 1. In cats.service.ts, the @Injectable() decorator declares the CatsService class as a class that can be managed by the Nest IoC container.
+> 2. In cats.controller.ts, CatsController declares a dependency on the CatsService token with constructor injection:  
+>     `constructor(private catsService: CatsService)`
+> 3. In app.module.ts, we associate the token CatsService with the class CatsService from the cats.service.ts file. We'll see below exactly how this association (also called registration) occurs.
+
+- 간단하게 정리해보자면,
+- 주입할 프로바이더에 `@Injectable` 데코레이터를 붙이면 Nest IoC 컨테이너가 해당 프로바이더를 관리할 수 있다고 선언합니다.
+- 주입 받을 곳에는 주입 받을 프로바이더의 토큰을 생성자 주입 방식으로 선언합니다.
+- 모듈에 둘을 등록하면, 둘을 연결시켜줍니다.
+- 마치 스프링 IoC 컨테이너가 Spring Bean을 관리하는 것과 유사한 것 같습니다.
 
 ## 모듈 생성해보기
 
