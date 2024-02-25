@@ -1,14 +1,5 @@
 # 📝What I learned~?
 
-### ⭐ 최근 업데이트
-
-- [\[자바\] 제네릭(Generics)](https://github.com/g4dalcom/dev_vault/blob/main/Studying/Java%26Spring/%EC%9E%90%EB%B0%94_%EC%A0%9C%EB%84%A4%EB%A6%AD(Generics).md)
-- [\[자바\] 업캐스팅 & 다운캐스팅 이해하기](https://github.com/g4dalcom/dev_vault/blob/main/Studying/Java&Spring/%EC%9E%90%EB%B0%94_%EC%97%85%EC%BA%90%EC%8A%A4%ED%8C%85_%EB%8B%A4%EC%9A%B4%EC%BA%90%EC%8A%A4%ED%8C%85.md)
-- [(리액트) 커스텀 셀렉트 박스(custom select-box)](Studying/JavaScript&React/리액트_커스텀_셀렉트박스(select_box).md)
-- [(리액트) 이미지 업로드 구현](https://github.com/g4dalcom/dev_vault/blob/main/Studying/JavaScript%26React/%EB%A6%AC%EC%95%A1%ED%8A%B8_%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%97%85%EB%A1%9C%EB%93%9C_(upload).md)
-- [(Next.js) 페이지네이션 구현해보기](https://github.com/g4dalcom/dev_vault/blob/main/Studying/JavaScript%26React/Next.js_%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98(Pagination).md)
-- [(Next.js) 무한스크롤 구현해보기(feat. Intersection observer)](https://github.com/g4dalcom/dev_vault/blob/main/Studying/JavaScript%26React/Next.js_%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4(Infinite_scroll)_IntersectionObserver.md)
-- [\[운영체제\] 프로세스와 스레드](https://github.com/g4dalcom/dev_vault/blob/main/Studying/CS/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4(Process)%EC%99%80%20%20%EC%8A%A4%EB%A0%88%EB%93%9C(Thread).md)
 
 ### 🔎 Algorithm
 
@@ -77,6 +68,7 @@
 	- [(자바) Record](Studying/Java&Spring/자바_record.md)
 	- [(자바) 비트 연산자](Studying/Java&Spring/자바_비트연산자.md)
 	- [(자바) JUnit](Studying/Java&Spring/자바_JUnit.md)
+	- [(자바) 멀티 모듈 프로젝트 구성해보기](Studying/Java&Spring/자바_멀티모듈_프로젝트_구성해보기.md)
 
 
 - ### JavaScript&React
